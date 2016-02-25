@@ -1,0 +1,91 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+
+body {
+    font-family: 'Lato', Arial, sans-serif;
+    background: linear-gradient(#009688,#0097a7);
+    width: 1080px;
+    height: 1080px;
+}
+
+nav {
+    margin: auto;
+    display: inline-block;
+    text-align: center;
+}
+
+nav ul,li{
+    display:inline-block;
+    color: white;
+    opacity: .87;
+    text-align: center;
+    margin: auto;
+}
+
+.welcome {
+    width: 100%;
+    color: white;
+}
+
+.welcome h1 {
+    opacity: .87;
+}
+
+/*svg*/
+
+svg {
+    opacity: .5;
+}
+
+polygon {
+    fill: white;
+    stroke: #E1BEE7;
+    stroke-width:3;
+    stroke-opacity:1;
+}
+
+.dark {
+    fill-opacity: .25;
+}
+
+.light {
+    fill-opacity: .5;
+}
+
+
+
+
+.triangle::before {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border: red;
+    border-color: red;
+}
+
+.triangle-dark, .triangle-light {
+	width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent transparent #ffffff transparent;
+    position: absolute;
+}
+
+.triangle-dark {
+    opacity: .1;
+}
+
+.triangle-light {
+    opacity: .2;
+}
+
+#t1 {
+    left: 0;
+    border-width: 0 25px 100px 175px;
+}
+
+#t2 {
+    left: 185px;
+    top: -9px;
+    border-width: 0 125px 100px 0;
+    transform: rotate(-14deg);
+}
