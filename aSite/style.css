@@ -56,22 +56,24 @@ nav img {
 /*svg*/
 
 svg {
-    opacity: .75;
+    opacity: .6;
 }
 
 polygon {
     fill: white;
     stroke: #E1BEE7;
     stroke-width:2;
-    stroke-opacity:1;
+    
 }
 
 .dark {
     fill-opacity: .25;
+    stroke-opacity:.9;
 }
 
 .light {
     fill-opacity: .5;
+    stroke-opacity:1;
 }
 
 
