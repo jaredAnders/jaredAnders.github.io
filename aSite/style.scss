@@ -7,57 +7,48 @@ body {
 }
 
 nav {
-    margin: auto;
     display: flex;
-    text-align: center;
-    vertical-align: middle;
-}
-
-nav {
-
+    ul {
+    list-style: none;
+    width: 33%;
+    }
     ul,li {
-        display:inline-block;
+        display:flex;
         color: white;
         opacity: .87;
         text-align: center;
-        vertical-align: middle;
         margin: auto;
         width: auto;
+        height: auto;
         padding: 0 10px;
     }
-}
-
-nav ul {
-    width: 25%;
-}
-
-nav img {
-    width: 50%;
+    img {
+    width: 33%;
+    height: 33%;
     display: inherit;
+    }
 }
 
 .welcome {
     width: 100%;
     color: white;
     text-align: center;
-}
-
-.welcome h1 {
-    opacity: .87;
-    font-weight: 400;
-}
-
-.welcome h1 span {
-    font-size: 125%;
-}
-
-.welcome h3 {
-    opacity: .87;
-    font-weight: 300;
+    h1, h3 {
+        opacity: .87;
+    }
+    h1 {
+        font-weight: 400;
+        span {
+            font-size: 125%;
+        }
+    }
+    h3 {
+        font-weight: 300;
+    }
+    
 }
 
 /*svg*/
-
 svg {
     opacity: .6;
 }
@@ -75,44 +66,5 @@ polygon {
 
 .light {
     fill-opacity: .5;
-    stroke-opacity:1;
-}
-
-
-
-
-.triangle::before {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    border: red;
-    border-color: red;
-}
-
-.triangle-dark, .triangle-light {
-	width: 0;
-    height: 0;
-    border-style: solid;
-    border-color: transparent transparent #ffffff transparent;
-    position: absolute;
-}
-
-.triangle-dark {
-    opacity: .1;
-}
-
-.triangle-light {
-    opacity: .2;
-}
-
-#t1 {
-    left: 0;
-    border-width: 0 25px 100px 175px;
-}
-
-#t2 {
-    left: 185px;
-    top: -9px;
-    border-width: 0 125px 100px 0;
-    transform: rotate(-14deg);
+    stroke-opacity: 1;
 }
