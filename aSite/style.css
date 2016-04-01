@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:200,300,400,700);
 body {
-  font-family: 'Lato', Arial, sans-serif;
+  font: 100% "Lato", Arial, sans-serif;
   background: linear-gradient(#009688, #0097a7);
   height: 1080px; }
 
@@ -37,13 +37,15 @@ nav {
     font-weight: 300; }
 
 /*svg*/
-svg {
-  opacity: .6; }
-
-polygon {
-  fill: white;
-  stroke: #E1BEE7;
-  stroke-width: 2; }
+#poly {
+  width: 90%;
+  margin: auto; }
+  #poly svg {
+    opacity: .6; }
+    #poly svg polygon {
+      fill: white;
+      stroke: #E1BEE7;
+      stroke-width: 2; }
 
 .dark {
   fill-opacity: .25;
