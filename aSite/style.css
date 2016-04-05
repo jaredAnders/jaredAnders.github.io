@@ -1,44 +1,75 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:200,300,400,700);
-body {
-  font: 100% "Lato", Arial, sans-serif;
-  background: linear-gradient(#009688, #0097a7);
-  height: 1080px; }
+@import url(https://fonts.googleapis.com/css?family=Lato:100,200,300,400,700);
+html, body, ul, ol {
+  margin: 0;
+  padding: 0; }
 
-nav {
-  display: flex; }
-  nav ul {
-    list-style: none;
-    width: 33%; }
-  nav ul, nav li {
+body {
+  font: 1rem "Lato", Arial, sans-serif;
+  background: linear-gradient(#009688, #0097a7); }
+
+header {
+  display: flex;
+  padding: .5em;
+  justify-content: space-between;
+  color: white;
+  align-items: center; }
+  header #logo {
+    width: 5em; }
+  header #menu-toggle {
+    font-size: 2.5em;
+    text-decoration: none;
+    font-weight: 100;
+    color: white; }
+
+#menu ul {
+  list-style: none;
+  justify-content: center;
+  text-align: center; }
+  #menu ul li {
+    font: 1rem "Lato", Arial, sans-serif;
+    color: white; }
+
+/*
+header {
     display: flex;
-    color: white;
-    opacity: .87;
-    text-align: center;
-    margin: auto;
-    width: auto;
-    height: auto;
-    padding: 0 10px; }
-  nav img {
+    padding: .1em;
+    ul {
+    list-style: none;
+    width: 33%;
+    }
+    ul,li {
+        display:flex;
+        color: white;
+        opacity: .87;
+        text-align: center;
+        margin: auto;
+        width: auto;
+        height: auto;
+        padding: 0 10px;
+    }
+    img {
     width: 33%;
     height: 33%;
-    display: inherit; }
-
-.welcome {
+    display: inherit;
+    }
+}
+*/
+#welcome {
   width: 100%;
   color: white;
   text-align: center; }
-  .welcome h1, .welcome h3 {
+  #welcome h1, #welcome h3 {
     opacity: .87; }
-  .welcome h1 {
+  #welcome h1 {
     font-weight: 400; }
-    .welcome h1 span {
+    #welcome h1 span {
       font-size: 125%; }
-  .welcome h3 {
+  #welcome h3 {
     font-weight: 300; }
 
 /*svg*/
 #poly {
-  width: 90%;
+  width: 100%;
   margin: auto; }
   #poly svg {
     opacity: .6; }

@@ -1,15 +1,54 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:200,300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:100,200,300,400,700);
 
 $lato: 'Lato', Arial, sans-serif;
 
-body {
-    font: 100% $lato;
-    background: linear-gradient(#009688,#0097a7);
-    height: 1080px;
+
+//reset
+html, body, ul, ol {
+    margin: 0;
+    padding: 0;
 }
 
-nav {
+
+body {
+    font: 1rem $lato;
+    background: linear-gradient(#009688,#0097a7);
+}
+
+
+header {
     display: flex;
+    padding: .5em;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    #logo {
+        width: 5em;
+    }
+    #menu-toggle {
+        font-size: 2.5em;
+        text-decoration: none;
+        font-weight: 100;
+        color: white;
+    }
+}
+
+#menu {
+    ul {
+        list-style: none;
+        justify-content: center;
+        text-align: center;
+        li {
+            font: 1rem $lato;
+            color: white;
+        }
+    }
+}
+
+/*
+header {
+    display: flex;
+    padding: .1em;
     ul {
     list-style: none;
     width: 33%;
@@ -30,8 +69,9 @@ nav {
     display: inherit;
     }
 }
+*/
 
-.welcome {
+#welcome {
     width: 100%;
     color: white;
     text-align: center;
@@ -52,7 +92,7 @@ nav {
 
 /*svg*/
 #poly {
-    width: 90%;
+    width: 100%;
     margin: auto;
     svg {
         opacity: .6;

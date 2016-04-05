@@ -10,14 +10,25 @@ Hi, thanks for checking out my code! I wanted to create a personal site that wou
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jared Gilbert</title>
-
-    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 </head>
 
 <body>
-    <nav role="navigation">
+    <header role="navigation">
+        <div><img src="/images/jagLogo.svg" id="logo" alt="Jared Anders Gilbert Logo"></div>
+        <div><a href="#" id="menu-toggle">&#9776;</a></div>
+    </header>
+    
+    <div id="menu">
+       <ul>
+           <li>bio</li>
+           <li>experience</li>
+           <li>skills</li>
+       </ul>
+    </div>
+
+<!--
         <ul id="logo">
             <li><img src="/images/jagLogo.svg" alt="Jared Anders Gilbert Logo"></li>
         </ul>
@@ -31,12 +42,12 @@ Hi, thanks for checking out my code! I wanted to create a personal site that wou
             <li>A.CO</li>
             <li>MAIL</li>
         </ul>
-    </nav>
-    <section class="welcome">
+-->
+<section id="welcome">
     <h1><span>J</span>ARED <span>A</span>NDERS <span>G</span>ILBERT</h1>
     <h3>front-end developer and digital marketing strategist</h3>
     <div id="poly">
-    <svg width="500px" height="500px">
+    <svg viewBox="0 0 100% 100%" preserveAspectRatio="none">
         <polygon class="dark" points="0,200  150,100 200,175"/>
         <polygon class="dark" points="0,200 200,175 175,250"/>
         <polygon class="light" points="150,100 200,175 300,150"/>
