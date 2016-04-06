@@ -11,22 +11,28 @@ Hi, thanks for checking out my code! I wanted to create a personal site that wou
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jared Gilbert</title>
     <link rel="stylesheet" href="style.css">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 </head>
 
 <body>
-    <header role="navigation">
-        <div><img src="/images/jagLogo.svg" id="logo" alt="Jared Anders Gilbert Logo"></div>
-        <div><a href="#" id="menu-toggle">&#9776;</a></div>
-    </header>
-    
-    <div id="menu">
-       <ul>
-           <li>bio</li>
-           <li>experience</li>
-           <li>skills</li>
+
+
+<header role="navigation">
+    <div><img src="/images/jagLogo.svg" id="logo" alt="Jared Anders Gilbert Logo"></div>
+    <div><button id="menu-toggle">&#9776;</button></div>
+</header>
+<div id="menu">
+   <ul>
+       <a href="#bio"><li>bio</li></a>
+       <a href="#exp"><li>experience</li></a>
+       <a href="#skills"><li>skills</li></a>
+       <ul id="icons">
+           <li>a</li>
+           <li>b</li>
+           <li>c</li>
        </ul>
-    </div>
+   </ul>
+</div>
+    
 
 <!--
         <ul id="logo">
@@ -47,7 +53,7 @@ Hi, thanks for checking out my code! I wanted to create a personal site that wou
     <h1><span>J</span>ARED <span>A</span>NDERS <span>G</span>ILBERT</h1>
     <h3>front-end developer and digital marketing strategist</h3>
     <div id="poly">
-    <svg viewBox="0 0 100% 100%" preserveAspectRatio="none">
+    <svg width="100%" height="25em" viewBox="0 0 100% 100%" preserveAspectRatio="none">
         <polygon class="dark" points="0,200  150,100 200,175"/>
         <polygon class="dark" points="0,200 200,175 175,250"/>
         <polygon class="light" points="150,100 200,175 300,150"/>
@@ -55,11 +61,12 @@ Hi, thanks for checking out my code! I wanted to create a personal site that wou
         <polygon class="dark" points="300,150 450,175 425,100"/>
         <polygon class="light" points="450,175 425,100 500,150"/>
     </svg>
-    </div>    
-        
+    </div>
     </section>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+   
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

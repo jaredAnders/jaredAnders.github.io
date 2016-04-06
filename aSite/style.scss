@@ -13,8 +13,10 @@ html, body, ul, ol {
 body {
     font: 1rem $lato;
     background: linear-gradient(#009688,#0097a7);
+    position: relative;
+    overflow: hidden;
+    right:0;
 }
-
 
 header {
     display: flex;
@@ -23,29 +25,72 @@ header {
     color: white;
     align-items: center;
     #logo {
-        width: 5em;
+        height: 2.5em;
     }
     #menu-toggle {
         font-size: 2.5em;
         text-decoration: none;
         font-weight: 100;
         color: white;
-    }
-}
-
-#menu {
-    ul {
-        list-style: none;
-        justify-content: center;
-        text-align: center;
-        li {
-            font: 1rem $lato;
-            color: white;
+        background: none;
+        border: none;
+        &:hover {
+            cursor: pointer;
+        }
+        &:focus {
+            outline: none;
         }
     }
 }
 
+#menu {
+    position: fixed;
+    top: 0;
+    right:-75%;
+    height: 100%;
+    width: 75%;
+    background: rgb(25,25,25);
+    box-shadow: inset 1em 0 2em rgba(0,0,0,.25), .5em 0 .5em rgba(0,0,0,.22);
+    ul {
+        list-style: none;
+        justify-content: center;
+        text-align: left;
+        li{
+            padding: 1em;
+            border-bottom: .1em solid rgba(0,0,0,.5);
+            &:hover {
+            background: rgba(255,255,255,.1);
+            transition: .5s;
+            cursor: pointer;
+            }
+        }
+        a {
+            font: 1em $lato;
+            color: white;
+            text-decoration: none;
+        }
+    }
+    #icons {
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: .1em solid rgba(0,0,0,.5);
+        li{
+            border-bottom: none;
+            text-align: center;
+            width: 33%;
+        }
+    }
+}
+
+.open{}
+
 /*
+.open {
+    transform: translate3d(0, 0, 0);
+}
+
+
 header {
     display: flex;
     padding: .1em;

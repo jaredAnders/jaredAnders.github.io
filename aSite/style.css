@@ -5,7 +5,10 @@ html, body, ul, ol {
 
 body {
   font: 1rem "Lato", Arial, sans-serif;
-  background: linear-gradient(#009688, #0097a7); }
+  background: linear-gradient(#009688, #0097a7);
+  position: relative;
+  overflow: hidden;
+  right: 0; }
 
 header {
   display: flex;
@@ -14,22 +17,58 @@ header {
   color: white;
   align-items: center; }
   header #logo {
-    width: 5em; }
+    height: 2.5em; }
   header #menu-toggle {
     font-size: 2.5em;
     text-decoration: none;
     font-weight: 100;
-    color: white; }
+    color: white;
+    background: none;
+    border: none; }
+    header #menu-toggle:hover {
+      cursor: pointer; }
+    header #menu-toggle:focus {
+      outline: none; }
 
-#menu ul {
-  list-style: none;
-  justify-content: center;
-  text-align: center; }
-  #menu ul li {
-    font: 1rem "Lato", Arial, sans-serif;
-    color: white; }
+#menu {
+  position: fixed;
+  top: 0;
+  right: -75%;
+  height: 100%;
+  width: 75%;
+  background: #191919;
+  box-shadow: inset 1em 0 2em rgba(0, 0, 0, 0.25), 0.5em 0 0.5em rgba(0, 0, 0, 0.22); }
+  #menu ul {
+    list-style: none;
+    justify-content: center;
+    text-align: left; }
+    #menu ul li {
+      padding: 1em;
+      border-bottom: 0.1em solid rgba(0, 0, 0, 0.5); }
+      #menu ul li:hover {
+        background: rgba(255, 255, 255, 0.1);
+        transition: .5s;
+        cursor: pointer; }
+    #menu ul a {
+      font: 1em "Lato", Arial, sans-serif;
+      color: white;
+      text-decoration: none; }
+  #menu #icons {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.1em solid rgba(0, 0, 0, 0.5); }
+    #menu #icons li {
+      border-bottom: none;
+      text-align: center;
+      width: 33%; }
 
 /*
+.open {
+    transform: translate3d(0, 0, 0);
+}
+
+
 header {
     display: flex;
     padding: .1em;
