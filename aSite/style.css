@@ -44,17 +44,20 @@ header {
     text-align: left; }
     #menu ul li {
       padding: 1em;
-      border-bottom: 0.1em solid rgba(0, 0, 0, 0.5); }
+      border-bottom: 0.1em solid rgba(0, 0, 0, 0.5);
+      transition: 0; }
       #menu ul li:hover {
         background: rgba(255, 255, 255, 0.1);
         transition: .5s;
         cursor: pointer; }
+      #menu ul li:active {
+        background: rgba(0, 0, 0, 0.3);
+        transition: .1s; }
     #menu ul a {
       font: 1em "Lato", Arial, sans-serif;
       color: white;
       text-decoration: none; }
   #menu #icons {
-    color: white;
     display: flex;
     justify-content: space-between;
     border-bottom: 0.1em solid rgba(0, 0, 0, 0.5); }
@@ -62,6 +65,19 @@ header {
       border-bottom: none;
       text-align: center;
       width: 33%; }
+      #menu #icons li img {
+        height: 2em; }
+
+.selected {
+  background: rgba(255, 255, 255, 0.05);
+  border-right: 0.5em solid #009688;
+  transition: 0s; }
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor; }
 
 /*
 .open {

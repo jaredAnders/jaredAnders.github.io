@@ -24,3 +24,10 @@ $('#menu-toggle').click(function() {
     }
     
 });
+
+
+$('#menu li').click(function(){
+    
+    $('#menu li').removeClass('selected',0);
+    $(this).addClass('selected',0);
+});

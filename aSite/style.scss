@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:100,200,300,400,700);
 
 $lato: 'Lato', Arial, sans-serif;
-
+$green: #009688;
 
 //reset
 html, body, ul, ol {
@@ -58,10 +58,15 @@ header {
         li{
             padding: 1em;
             border-bottom: .1em solid rgba(0,0,0,.5);
+            transition: 0;
             &:hover {
-            background: rgba(255,255,255,.1);
-            transition: .5s;
-            cursor: pointer;
+                background: rgba(255,255,255,.1);
+                transition: .5s;
+                cursor: pointer;
+            }
+            &:active {
+                background: rgba(0,0,0,.3);
+                transition: .1s;
             }
         }
         a {
@@ -71,7 +76,6 @@ header {
         }
     }
     #icons {
-        color: white;
         display: flex;
         justify-content: space-between;
         border-bottom: .1em solid rgba(0,0,0,.5);
@@ -79,11 +83,27 @@ header {
             border-bottom: none;
             text-align: center;
             width: 33%;
+            img {
+                height: 2em;
+            }
         }
     }
 }
 
+.selected {
+    background: rgba(255,255,255,.05);
+    border-right: .5em solid $green;
+    transition: 0s;
+}
+
 .open{}
+
+.icon {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+}
 
 /*
 .open {
