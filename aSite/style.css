@@ -1,21 +1,26 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:100,200,300,400,700);
-html, body, ul, ol {
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0; }
 
 body {
   font: 1rem "Lato", Arial, sans-serif;
-  background: linear-gradient(#009688, #0097a7);
-  position: relative;
-  overflow: hidden;
-  right: 0; }
+  position: relative; }
 
 header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
   display: flex;
   padding: .5em;
   justify-content: space-between;
   color: white;
-  align-items: center; }
+  align-items: center;
+  background: #009688; }
   header #logo {
     height: 2.5em; }
   header #menu-toggle {
@@ -79,37 +84,10 @@ header {
   height: 1em;
   fill: currentColor; }
 
-/*
-.open {
-    transform: translate3d(0, 0, 0);
-}
-
-
-header {
-    display: flex;
-    padding: .1em;
-    ul {
-    list-style: none;
-    width: 33%;
-    }
-    ul,li {
-        display:flex;
-        color: white;
-        opacity: .87;
-        text-align: center;
-        margin: auto;
-        width: auto;
-        height: auto;
-        padding: 0 10px;
-    }
-    img {
-    width: 33%;
-    height: 33%;
-    display: inherit;
-    }
-}
-*/
 #welcome {
+  position: relative;
+  background: linear-gradient(#009688, #0097a7);
+  margin-top: 3.5em;
   width: 100%;
   color: white;
   text-align: center; }
@@ -140,5 +118,12 @@ header {
 .light {
   fill-opacity: .5;
   stroke-opacity: 1; }
+
+#bio {
+  color: rgba(0, 0, 0, 0.87);
+  padding: 1em;
+  background: white; }
+  #bio p {
+    padding: .5em 0; }
 
 /*# sourceMappingURL=style.css.map */

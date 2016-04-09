@@ -2,28 +2,37 @@
 
 $lato: 'Lato', Arial, sans-serif;
 $green: #009688;
+$white: rgba(255,255,255,.87);
+$black: rgba(0,0,0,.87);
+$bg-fade: linear-gradient(#009688,#0097a7);
+
 
 //reset
-html, body, ul, ol {
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-
+//base
 body {
     font: 1rem $lato;
-    background: linear-gradient(#009688,#0097a7);
     position: relative;
-    overflow: hidden;
-    right:0;
 }
 
 header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
     display: flex;
     padding: .5em;
     justify-content: space-between;
     color: white;
     align-items: center;
+    background: $green;
     #logo {
         height: 2.5em;
     }
@@ -105,38 +114,10 @@ header {
 	fill: currentColor;
 }
 
-/*
-.open {
-    transform: translate3d(0, 0, 0);
-}
-
-
-header {
-    display: flex;
-    padding: .1em;
-    ul {
-    list-style: none;
-    width: 33%;
-    }
-    ul,li {
-        display:flex;
-        color: white;
-        opacity: .87;
-        text-align: center;
-        margin: auto;
-        width: auto;
-        height: auto;
-        padding: 0 10px;
-    }
-    img {
-    width: 33%;
-    height: 33%;
-    display: inherit;
-    }
-}
-*/
-
 #welcome {
+    position: relative;
+    background: $bg-fade;
+    margin-top: 3.5em;
     width: 100%;
     color: white;
     text-align: center;
@@ -177,4 +158,14 @@ header {
 .light {
     fill-opacity: .5;
     stroke-opacity: 1;
+}
+
+
+#bio {
+    color: $black;
+    padding: 1em;
+    background: white;
+    p {
+        padding: .5em 0;
+    }
 }
