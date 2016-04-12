@@ -15,11 +15,6 @@ Hi, thanks for checking out my code! I wanted to create a personal site that wou
 
 <body>
 
-
-<header role="navigation">
-    <div><img src="svg/jagLogo.svg" id="logo" alt="Jared Anders Gilbert Logo"></div>
-    <div><img src="svg/menu2.svg" id="menu-toggle"></div>
-</header>
 <div id="menu">
    <ul>
        <a href="#bio"><li>bio</li></a>
@@ -32,6 +27,11 @@ Hi, thanks for checking out my code! I wanted to create a personal site that wou
        </ul>
    </ul>
 </div>
+
+<header role="navigation">
+    <div><img src="svg/jagLogo.svg" id="logo" alt="Jared Anders Gilbert Logo"></div>
+    <div><img src="svg/menu2.svg" id="menu-toggle"></div>
+</header>
 
 <section id="welcome">
     <h1><span>J</span>ARED <span>A</span>NDERS <span>G</span>ILBERT</h1>
@@ -59,8 +59,26 @@ Hi, thanks for checking out my code! I wanted to create a personal site that wou
         <p>If you're interested in getting to know me better and learning more about what I can do for your company, please send me a message below.
         </p>
     </section>
-   
     
+    <section id="experience">
+        tree map
+    </section>
+    
+    <section id="skills">
+        
+    </section>
+    <!--action="//formspree.io/pciowr20@robot.zapier.com"-->
+    <section id="contact">
+        <form id="contactform" method="POST">
+            <input type="text" name="name" placeholder="name">
+            <input type="email" name="email" placeholder="email">
+            <textarea name="message" placeholder="message"></textarea>
+            <input type="hidden" name="_next" value="index.html" />
+            <input type="text" name="_gotcha" style="display:none" />
+            <input type="submit" value="Send">
+        </form>
+        
+    </section>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="script.js"></script>
 </body>

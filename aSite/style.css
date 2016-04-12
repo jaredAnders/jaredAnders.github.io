@@ -78,6 +78,9 @@ header {
   border-right: 0.5em solid #009688;
   transition: 0s; }
 
+.open {
+  transform: translate3d(0, 0, 0); }
+
 .icon {
   display: inline-block;
   width: 1em;
@@ -125,5 +128,15 @@ header {
   background: white; }
   #bio p {
     padding: .5em 0; }
+
+#experience {
+  color: rgba(255, 255, 255, 0.87);
+  background: #009688;
+  padding: 1em; }
+
+#contact {
+  background: #009688;
+  padding: 1em;
+  display: block; }
 
 /*# sourceMappingURL=style.css.map */

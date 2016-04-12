@@ -1,3 +1,7 @@
+var contactform =  document.getElementById("contactform");
+contactform.setAttribute("action", "//formspree.io/" + "pciowr20" + "@" + "robot" + "." + "zapier" + "." + "com");
+
+
 $('#menu-toggle').click(function() {
     if($(this).hasClass('open')){
         
@@ -12,6 +16,7 @@ $('#menu-toggle').click(function() {
     }
     
     else {
+    
         
     $('#menu').animate({
         right:"0px"
@@ -19,7 +24,7 @@ $('#menu-toggle').click(function() {
     $('body').animate({
         right:"75%"
     });
-    $(this).addClass('open');
+    $('#menu-toggle').addClass('open');
         
     }
     

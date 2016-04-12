@@ -105,7 +105,9 @@ header {
     transition: 0s;
 }
 
-.open{}
+.open{
+    transform:translate3d(0,0,0);
+}
 
 .icon {
 	display: inline-block;
@@ -168,4 +170,16 @@ header {
     p {
         padding: .5em 0;
     }
+}
+
+#experience {
+    color: $white;
+    background: $green;
+    padding: 1em;
+}
+
+#contact {
+    background: $green;
+    padding: 1em;
+    display: block;
 }
