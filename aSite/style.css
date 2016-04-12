@@ -66,12 +66,16 @@ header {
     display: flex;
     justify-content: space-between;
     border-bottom: 0.1em solid rgba(0, 0, 0, 0.5); }
-    #menu #icons li {
+    #menu #icons a {
       border-bottom: none;
       text-align: center;
-      width: 33%; }
-      #menu #icons li img {
-        height: 2em; }
+      width: 33%;
+      text-decoration: none; }
+      #menu #icons a li {
+        border-bottom: none;
+        width: 100%; }
+        #menu #icons a li img {
+          height: 2em; }
 
 .selected {
   background: rgba(255, 255, 255, 0.05);
@@ -136,7 +140,27 @@ header {
 
 #contact {
   background: #009688;
-  padding: 1em;
-  display: block; }
+  padding: 1em; }
+  #contact input, #contact textarea {
+    padding: .5em;
+    display: block;
+    width: 75%;
+    margin: 1em auto;
+    border: none;
+    border-radius: none; }
+  #contact textarea {
+    height: 5em;
+    resize: none; }
+  #contact #cta {
+    color: rgba(255, 255, 255, 0.87);
+    font-weight: 400;
+    font-size: 1em;
+    background: rgba(255, 255, 255, 0.25);
+    transition: .5s;
+    width: auto;
+    padding: .5em 2em; }
+    #contact #cta:hover {
+      background: rgba(255, 255, 255, 0.5);
+      cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */

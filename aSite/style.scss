@@ -88,12 +88,17 @@ header {
         display: flex;
         justify-content: space-between;
         border-bottom: .1em solid rgba(0,0,0,.5);
-        li{
+        a{
             border-bottom: none;
             text-align: center;
             width: 33%;
-            img {
-                height: 2em;
+            text-decoration: none;
+            li{
+                border-bottom: none;
+                width: 100%;
+                img {
+                    height: 2em;
+                }
             }
         }
     }
@@ -181,5 +186,29 @@ header {
 #contact {
     background: $green;
     padding: 1em;
-    display: block;
+    input, textarea {
+        padding: .5em;
+        display: block;
+        width: 75%;
+        margin: 1em auto;
+        border: none;
+        border-radius: none;
+    }
+    textarea{
+        height: 5em;
+        resize: none;
+    }
+    #cta {
+        color: $white;
+        font-weight: 400;
+        font-size: 1em;
+        background: rgba(255,255,255,.25);
+        transition: .5s;
+        width: auto;
+        padding: .5em 2em;
+        &:hover{
+            background: rgba(255,255,255,.5);
+            cursor: pointer;
+        }
+    }
 }
