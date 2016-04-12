@@ -108,6 +108,9 @@ header {
     font-weight: 300; }
 
 /*svg*/
+#polymount {
+  width: 90%; }
+
 #poly {
   width: 100%;
   margin: auto; }
@@ -136,7 +139,9 @@ header {
 #experience {
   color: rgba(255, 255, 255, 0.87);
   background: #009688;
-  padding: 1em; }
+  padding: 1em;
+  margin: auto;
+  text-align: center; }
 
 #contact {
   background: #009688;
@@ -152,9 +157,9 @@ header {
     height: 5em;
     resize: none; }
   #contact #cta {
+    font: 1em "Lato", Arial, sans-serif;
     color: rgba(255, 255, 255, 0.87);
     font-weight: 400;
-    font-size: 1em;
     background: rgba(255, 255, 255, 0.25);
     transition: .5s;
     width: auto;

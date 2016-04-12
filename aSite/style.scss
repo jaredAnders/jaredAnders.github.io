@@ -144,6 +144,11 @@ header {
 }
 
 /*svg*/
+
+#polymount {
+    width: 90%;
+}
+
 #poly {
     width: 100%;
     margin: auto;
@@ -181,6 +186,8 @@ header {
     color: $white;
     background: $green;
     padding: 1em;
+    margin: auto;
+    text-align: center;
 }
 
 #contact {
@@ -199,9 +206,9 @@ header {
         resize: none;
     }
     #cta {
+        font: 1em $lato;
         color: $white;
         font-weight: 400;
-        font-size: 1em;
         background: rgba(255,255,255,.25);
         transition: .5s;
         width: auto;
