@@ -1,7 +1,3 @@
-var contactform =  document.getElementById("contactform");
-contactform.setAttribute("action", "//formspree.io/" + "pciowr20" + "@" + "robot" + "." + "zapier" + "." + "com");
-
-
 var url = "//formspree.io/" + "pciowr20" + "@" + "robot" + "." + "zapier" + "." + "com";
 
 function submitForm(){
@@ -11,6 +7,7 @@ function submitForm(){
         data: $('#contactform').serialize(),
         dataType:'json'
     })
+    $('#contactform').fadeOut();
 };
 
 $('#menu-toggle').click(function() {
