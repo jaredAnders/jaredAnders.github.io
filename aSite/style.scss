@@ -143,35 +143,10 @@ header {
     
 }
 
-/*svg*/
-
-#polymount {
-    width: 90%;
-}
 
 #poly {
-    width: 100%;
-    margin: auto;
-    svg {
-        opacity: .6;
-        polygon {
-            fill: white;
-            stroke: #E1BEE7;
-            stroke-width:2;
-        }
-    }
+    width: 90%;
 }
-
-.dark {
-    fill-opacity: .25;
-    stroke-opacity:.9;
-}
-
-.light {
-    fill-opacity: .5;
-    stroke-opacity: 1;
-}
-
 
 #bio {
     color: $black;

@@ -23,7 +23,7 @@ Hi, thanks for checking out my code! I wanted to create a personal site that wou
        <ul id="icons">
            <a href="#"><li><img src="img/linkedin.svg" alt="linkedin"></li></a>
            <a href="#"><li><img src="img/angellist.svg" alt="angel list"></li></a>
-           <a href="#contact"><li><img src="img/mail3.svg" id="mail" alt="send me a message"></li></a>
+           <a href="#contact"><li><img src="img/mail3.svg" id="mail" alt="send a message"></li></a>
        </ul>
    </ul>
 </div>
@@ -37,23 +37,33 @@ Hi, thanks for checking out my code! I wanted to create a personal site that wou
     <h1><span>J</span>ARED <span>A</span>NDERS <span>G</span>ILBERT</h1>
     <h3>front-end developer and digital marketing strategist</h3>
     <div id="poly">
-    <img src="img/polymount.svg" id="polymount" alt="">
+    <img src="img/polymount.svg" id="poly" alt="">
     </div>
     </section>
     
     <section id="bio">
-        <p>I am a self-taught front-end developer with over 3 years of experience in web development and digital marketing.</p>
+       <h2>bio</h2>
+        <p>I am a self-taught front-end developer with over 3 years of professional experience in web development and digital marketing.</p>
         <p>Working in 5 roles over the past 4 years, I've begun to forge a career that revolves around my passion for leveraging technology to solve problems in creative ways.</p>
-        <p>I'm looking for a series A or B startup</p>
-        
-        <p>I'm looking to join an experienced yet forward-thinking team at a fast-paced, ambitious company in a role that supports my growth as a developer.</p>
-        <p>If you're interested in getting to know me better and learning more about what I can do for your company, please send me a message below.
-        </p>
         
         <p>In my free time, I've been studying programming and computer science while staying up to date on emerging technologies and design trends.</p>
         <p>My dream is to define and expand the digital presence of a brand that I believe in.</p>
+        
         <p>Starting with a strategy that begins with gathering detailed analytics, I will be an active leader in crafting the best digital experience for your users.</p>
-        <p>Outside of work, I enjoy all things music, including writing, producing, improvising and attending live shows. I am also an avid investor, primarily in domestic tech stocks. In addition, I enjoy eating healthy and go to the gym regularly.</p>
+        
+        
+        
+        <p>I'm looking to join an experienced yet forward-thinking team at a fast-paced, ambitious company in a role that supports my growth as a developer.</p>
+        <p> a series A or B startup that has found market fit and is looking to improve and expand</p>
+        
+        
+        <p>If you're interested in getting to know me better and learning more about what I can do for your company, <a href="#contact">please send me a message.</a>
+        </p>
+        
+        
+        
+        
+        <p>Outside of work, I enjoy all things music, including writing, playing, producing and attending live shows. I am also an avid investor, primarily in domestic tech stocks. In addition, I enjoy eating healthy and go to the gym regularly.</p>
         
         
     </section>
@@ -66,7 +76,7 @@ Hi, thanks for checking out my code! I wanted to create a personal site that wou
         
     </section>
     <section id="contact">
-        <form id="contactform" method="POST">
+        <form id="contactform" onsubmit="submitForm(); return false;">
             <input type="text" name="name" placeholder="name">
             <input type="email" name="email" placeholder="email">
             <textarea name="message" placeholder="message"></textarea>

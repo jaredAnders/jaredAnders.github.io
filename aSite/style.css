@@ -107,27 +107,8 @@ header {
   #welcome h3 {
     font-weight: 300; }
 
-/*svg*/
-#polymount {
-  width: 90%; }
-
 #poly {
-  width: 100%;
-  margin: auto; }
-  #poly svg {
-    opacity: .6; }
-    #poly svg polygon {
-      fill: white;
-      stroke: #E1BEE7;
-      stroke-width: 2; }
-
-.dark {
-  fill-opacity: .25;
-  stroke-opacity: .9; }
-
-.light {
-  fill-opacity: .5;
-  stroke-opacity: 1; }
+  width: 90%; }
 
 #bio {
   color: rgba(0, 0, 0, 0.87);

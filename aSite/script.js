@@ -2,6 +2,17 @@ var contactform =  document.getElementById("contactform");
 contactform.setAttribute("action", "//formspree.io/" + "pciowr20" + "@" + "robot" + "." + "zapier" + "." + "com");
 
 
+var url = "//formspree.io/" + "pciowr20" + "@" + "robot" + "." + "zapier" + "." + "com";
+
+function submitForm(){
+    $.ajax({
+        url: url,
+        method: 'POST',
+        data: $('#contactform').serialize(),
+        dataType:'json'
+    })
+};
+
 $('#menu-toggle').click(function() {
     if($(this).hasClass('open')){
         
