@@ -1,0 +1,99 @@
+/*
+var data = {
+    html: {
+        title: 'HTML',
+        category: 'Front-end Development',
+        value: 3
+    },
+    css: {
+        title: 'Sass/CSS',
+        category: 'Front-end Development'
+    
+    }
+}
+*/
+
+var test = {
+    dev: 
+    {
+        category: 'Front-end Development',
+        skills: [
+            {
+                title: 'HTML',
+                value: 9
+            },
+            {
+                title: 'Sass/CSS',
+                value: 9
+            },
+            {
+                title: 'JavaScript',
+                value: 5
+            },
+            {
+                title: 'jQuery',
+                value: 7
+            },
+            {
+                title: 'Git',
+                value: 5
+            }
+        ]
+    }
+}
+                
+/*          
+            },
+            css:{
+                
+            },
+            js:{
+                
+            },
+            jquery:{
+                
+            },
+            git:{
+                
+            }
+        }
+    },
+    platforms: {
+        
+    },
+    design: {
+        
+    },
+    analytics: {
+        
+    }
+}
+
+
+var data = {
+    datasets: [{
+        data: [
+            9,
+            9,
+            5,
+            7,
+            5
+        ],
+        backgroundColor: [
+            '#f06529',
+            '#c6538c',
+            '#f3df49',
+            '#0769ad',
+            '#f14e32'
+        ],
+        label: 'Experience'
+    }],
+    labels: [
+        'HTML',
+        'Sass/CSS',
+        'JavaScript',
+        'jQuery',
+        'Git'
+    ]
+};
+*/
