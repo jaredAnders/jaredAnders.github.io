@@ -18,14 +18,18 @@ Hi, thanks for checking out my code! I wanted to create a personal site that wou
 <div id="menu">
    <ul>
        <a href="#bio"><li>bio</li></a>
-       <a href="#exp"><li>experience</li></a>
        <a href="#skills"><li>skills</li></a>
+       <a href="#experience"><li>experience</li></a>
        <ul id="icons">
            <a href="#"><li><img src="img/linkedin.svg" alt="linkedin"></li></a>
            <a href="#"><li><img src="img/angellist.svg" alt="angel list"></li></a>
+           <a href="#"><li><img src="" alt=""></li></a>
            <a href="#contact"><li><img src="img/mail3.svg" id="mail" alt="send a message"></li></a>
        </ul>
    </ul>
+</div>
+
+<div class="overlay">
 </div>
 
 <header role="navigation">
@@ -34,47 +38,49 @@ Hi, thanks for checking out my code! I wanted to create a personal site that wou
 </header>
 
 <section id="welcome">
-    <h1><span>J</span>ARED <span>A</span>NDERS <span>G</span>ILBERT</h1>
-    <h3>front-end developer and digital marketing strategist</h3>
-    <div id="poly">
-    <img src="img/polymount.svg" id="poly" alt="">
+    <div>
+        <h1><span>J</span>ARED <span>A</span>NDERS <span>G</span>ILBERT</h1>
+        <h3>front-end developer and digital marketing strategist</h3>
     </div>
-    </section>
+    <div>
+        <img src="img/0276.svg" id="poly" alt="">
+    </div>
+</section>
     
     <section id="bio">
        <h2>bio</h2>
         <p>I am a self-taught front-end developer with over 3 years of professional experience in web development and digital marketing.</p>
+        
         <p>Working in 5 roles over the past 4 years, I've begun to forge a career that revolves around my passion for leveraging technology to solve problems in creative ways.</p>
         
         <p>In my free time, I've been studying programming and computer science while staying up to date on emerging technologies and design trends.</p>
-        <p>My dream is to define and expand the digital presence of a brand that I believe in.</p>
-        
-        <p>Starting with a strategy that begins with gathering detailed analytics, I will be an active leader in crafting the best digital experience for your users.</p>
-        
-        
         
         <p>I'm looking to join an experienced yet forward-thinking team at a fast-paced, ambitious company in a role that supports my growth as a developer.</p>
-        <p> a series A or B startup that has found market fit and is looking to improve and expand</p>
         
+        <p>My dream is to define the digital presence of a brand that I believe in.</p>
         
-        <p>If you're interested in getting to know me better and learning more about what I can do for your company, <a href="#contact">please send me a message.</a>
+        <p>I will be an active leader in crafting the best digital experience for your users.</p>
+        
+        <p>If you're interested in getting to know me better and learning more about what I can do for you and your company, <a href="#contact">please send me a message.</a>
         </p>
         
         
         
+        <!--
+        <p>Outside of work, I enjoy all things music, including writing, playing, producing and attending live shows. I am also an avid investor, primarily in domestic tech stocks. In addition, I enjoy eating healthy and exercise regularly.</p>
+        -->
         
-        <p>Outside of work, I enjoy all things music, including writing, playing, producing and attending live shows. I am also an avid investor, primarily in domestic tech stocks. In addition, I enjoy eating healthy and go to the gym regularly.</p>
-        
-        
-    </section>
-    
-    <section id="experience">
-        <div>tree map</div>
     </section>
     
     <section id="skills">
-        
+        <div>Skills</div>
+        <canvas id="skills-chart" width="400" height="400"></canvas>
     </section>
+    
+    <section id="experience">
+        <div><a href="http://mickaelr.github.io/jquery-timelineMe/">Vertical Timeline</a></div>
+    </section>
+    
     <section id="contact">
         <form id="contactform" onsubmit="submitForm(); return false;">
             <input type="text" name="name" placeholder="name">
@@ -86,6 +92,7 @@ Hi, thanks for checking out my code! I wanted to create a personal site that wou
         
     </section>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.1/Chart.min.js"></script>
     <script src="script.js"></script>
 </body>
 

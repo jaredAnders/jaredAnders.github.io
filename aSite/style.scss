@@ -20,6 +20,7 @@ $bg-fade: linear-gradient(#009688,#0097a7);
 body {
     font: 1rem $lato;
     position: relative;
+    z-index: 0;
 }
 
 header {
@@ -32,7 +33,10 @@ header {
     justify-content: space-between;
     color: white;
     align-items: center;
-    background: $green;
+    background: none;
+    box-shadow: none;
+    -webkit-transition: 300ms ease;
+    transition: 300ms ease;
     #logo {
         height: 2.5em;
     }
@@ -52,14 +56,32 @@ header {
     }
 }
 
+.scrolled {
+    background: white;
+    box-shadow: 0 0 1em rgba(0,0,0,.25);
+    -webkit-transition: 300ms ease;
+    transition: 300ms ease;
+}
+
 #menu {
     position: fixed;
     top: 0;
-    right:-75%;
+    right:0;
+    z-index: 1000;
     height: 100%;
     width: 75%;
     background: rgb(33,33,33);
-    box-shadow: inset 1em 0 2em rgba(0,0,0,.25), .5em 0 .5em rgba(0,0,0,.22);
+    -moz-box-shadow: 1.5em 0 3em rgba(0,0,0,1), 1em 0 .75em rgba(0,0,0,1);
+    -webkit-box-shadow: 1.5em 0 3em rgba(0,0,0,1), 1em 0 .75em rgba(0,0,0,1);
+    box-shadow: 1.5em 0 3em rgba(0,0,0,1), 1em 0 .75em rgba(0,0,0,1);
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-transition: 300ms ease;
+    transition: 300ms ease;
+    
     ul {
         list-style: none;
         justify-content: center;
@@ -104,15 +126,39 @@ header {
     }
 }
 
+
+
+.overlay {
+    position: fixed;
+    z-index: -500;
+    top: 0;
+    right:0;
+    transform: translateZ(-100);
+    height: 100%;
+    width: 100%;
+    background: rgba(33,33,33,.25);
+    opacity: 0;
+    cursor: pointer;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    -webkit-transition: 300ms ease;
+    transition: 300ms ease;
+}
+
+.open {
+    z-index: 500;
+    opacity: 1;
+    -webkit-transition: 300ms ease;
+    transition: 300ms ease;
+}
+
 .selected {
     background: rgba(255,255,255,.05);
     border-right: .5em solid $green;
     transition: 0s;
 }
 
-.open{
-    transform:translate3d(0,0,0);
-}
+
 
 .icon {
 	display: inline-block;
@@ -123,29 +169,42 @@ header {
 
 #welcome {
     position: relative;
-    background: $bg-fade;
-    margin-top: 3.5em;
+    background: linear-gradient(white, rgba(255,255,255,.5) 5%,rgba(255,255,255,.5) 95%, white), url(img/test.svg), white;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    //margin-top: 3.5em;
+    padding: 3.5em 1em 1em;
     width: 100%;
-    color: white;
+    height: 100vh;
+    color: $green;
     text-align: center;
     h1, h3 {
         opacity: .87;
+        padding: .5em .1em;
     }
     h1 {
-        font-weight: 400;
+        font-weight: 300;
         span {
             font-size: 125%;
         }
     }
     h3 {
-        font-weight: 300;
+        font-weight: 200;
+        font-size: 1em;
     }
     
 }
 
+#poly-cont {
+    
+}
 
 #poly {
     width: 90%;
+    padding: 1em 0;
+    max-width: 576px;
 }
 
 #bio {
@@ -157,17 +216,35 @@ header {
     }
 }
 
-#experience {
-    color: $white;
-    background: $green;
+#skills {
     padding: 1em;
     margin: auto;
     text-align: center;
+    color: $white;
+    background: $green;
+    height: 100vh;
+    a {
+        color: $white;
+        text-decoration: none;
+    }
+}
+
+#experience {
+    padding: 1em;
+    margin: auto;
+    text-align: center;
+    color: $green;
+    background: white;
+    a {
+        color: $black;
+        text-decoration: none;
+    }
 }
 
 #contact {
     background: $green;
     padding: 1em;
+    height: 100vh;
     input, textarea {
         padding: .5em;
         display: block;
