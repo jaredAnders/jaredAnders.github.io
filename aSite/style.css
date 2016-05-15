@@ -172,6 +172,11 @@ header {
   color: rgba(255, 255, 255, 0.87);
   background: #009688;
   height: 100vh; }
+  #skills #chart-container {
+    width: 90%;
+    margin: auto; }
+    #skills #chart-container #chart {
+      height: 100%; }
   #skills a {
     color: rgba(255, 255, 255, 0.87);
     text-decoration: none; }

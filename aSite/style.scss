@@ -223,6 +223,13 @@ header {
     color: $white;
     background: $green;
     height: 100vh;
+    #chart-container {
+        width: 90%;
+        margin: auto;
+        #chart {
+            height: 100%;
+        }
+    }
     a {
         color: $white;
         text-decoration: none;

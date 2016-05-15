@@ -34,27 +34,28 @@ $('#menu li').click(function(){
 });
 */
 
-
-//skills chart
-var ctx = document.getElementById('skills-chart').getContext('2d');
-
+//skills chart data
 var categories = {
     datasets: [{
         data: [
             9,
+            5,
             5,
             9
         ],
         backgroundColor: [
             'rgba(240, 101, 41, 0.9)',
             'rgba(198, 83, 140, 0.9)',
-            'rgba(243, 223, 73, 0.9)'
+            'rgba(243, 223, 73, 0.9)',
+            'rgba(7, 105, 173,0.9)'
+            
         ],
         label: 'Experience'
     }],
     labels: [
         'Front-end Development',
         'Platforms',
+        'Design',
         'Analytics'
     ]
 };
@@ -113,6 +114,9 @@ var platforms = {
     ]
 };
 
+//skills chart
+var ctx = document.getElementById('chart').getContext('2d');
+
 var options = {
         responsive: true,
         elements: {
@@ -128,7 +132,7 @@ var options = {
         },
         scale: {
             scaleLabel: {
-                //display: true
+                display: true
             },
             ticks: {
                 beginAtZero: true,
@@ -137,7 +141,7 @@ var options = {
                 max: 10
             },
             gridLines: {
-                display: false
+                color: 'rgba(255,255,255,.12)'
             }
         }
 }
@@ -150,11 +154,11 @@ var myChart = new Chart(ctx, {
 
 function recreateChart (data) {
     myChart.destroy();
-    ctx = document.getElementById('skills-chart').getContext('2d');
+    ctx = document.getElementById('chart').getContext('2d');
     myChart = new Chart(ctx, {data: data, type: 'polarArea', options: options});
 }
 
-$('#skills-chart').on('click', function (evt){
+$('#chart').on('click', function (evt){
     var activePoints = myChart.getElementAtEvent(evt);
     var label = activePoints[0]._model['label'];
     console.log(activePoints);
