@@ -1,0 +1,259 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,200,300,400,700);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 1rem "Lato", Arial, sans-serif;
+  position: relative;
+  z-index: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  padding: .5em;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  color: white;
+  -ms-flex-align: center;
+      align-items: center;
+  background: none;
+  box-shadow: none;
+  transition: 300ms ease;
+}
+header #logo {
+  height: 2.5em;
+}
+header #menu-toggle {
+  font-size: 2.5em;
+  text-decoration: none;
+  font-weight: 100;
+  color: white;
+  background: none;
+  border: none;
+}
+header #menu-toggle:hover {
+  cursor: pointer;
+}
+header #menu-toggle:focus {
+  outline: none;
+}
+
+.scrolled {
+  background: white;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.25);
+  transition: 300ms ease;
+}
+
+#menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  height: 100%;
+  width: 75%;
+  background: #212121;
+  box-shadow: 1.5em 0 3em black, 1em 0 0.75em black;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  transform: translateX(100%);
+  transition: 300ms ease;
+}
+#menu ul {
+  list-style: none;
+  -ms-flex-pack: center;
+      justify-content: center;
+  text-align: left;
+}
+#menu ul li {
+  padding: 1em;
+  border-bottom: 0.1em solid rgba(0, 0, 0, 0.5);
+  transition: 0;
+}
+#menu ul li:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transition: .5s;
+  cursor: pointer;
+}
+#menu ul li:active {
+  background: rgba(0, 0, 0, 0.3);
+  transition: .1s;
+}
+#menu ul a {
+  font: 1em "Lato", Arial, sans-serif;
+  color: white;
+  text-decoration: none;
+}
+#menu #icons {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  border-bottom: 0.1em solid rgba(0, 0, 0, 0.5);
+}
+#menu #icons a {
+  border-bottom: none;
+  text-align: center;
+  width: 33%;
+  text-decoration: none;
+}
+#menu #icons a li {
+  border-bottom: none;
+  width: 100%;
+}
+#menu #icons a li img {
+  height: 2em;
+}
+
+.overlay {
+  position: fixed;
+  z-index: -500;
+  top: 0;
+  right: 0;
+  transform: translateZ(-100);
+  height: 100%;
+  width: 100%;
+  background: rgba(33, 33, 33, 0.25);
+  opacity: 0;
+  cursor: pointer;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  transition: 300ms ease;
+}
+
+.open {
+  z-index: 500;
+  opacity: 1;
+  transition: 300ms ease;
+}
+
+.selected {
+  background: rgba(255, 255, 255, 0.05);
+  border-right: 0.5em solid #009688;
+  transition: 0s;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+}
+
+#welcome {
+  position: relative;
+  background: linear-gradient(white, rgba(255, 255, 255, 0.5) 5%, rgba(255, 255, 255, 0.5) 95%, white), url(../img/test.svg), white;
+  background-size: cover;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 3.5em 1em 1em;
+  width: 100%;
+  height: 100vh;
+  color: #009688;
+  text-align: center;
+}
+#welcome h1, #welcome h3 {
+  opacity: .87;
+  padding: .5em .1em;
+}
+#welcome h1 {
+  font-weight: 300;
+}
+#welcome h1 span {
+  font-size: 125%;
+}
+#welcome h3 {
+  font-weight: 200;
+  font-size: 1em;
+}
+
+#poly {
+  width: 90%;
+  padding: 1em 0;
+  max-width: 576px;
+}
+
+#bio {
+  color: rgba(0, 0, 0, 0.87);
+  padding: 1em;
+  background: white;
+  max-width: 768px;
+  margin: auto;
+}
+#bio p {
+  padding: .5em 0;
+}
+
+#skills {
+  padding: 1em;
+  margin: auto;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.87);
+  background: #009688;
+  height: 100vh;
+}
+#skills #chart-container {
+  width: 90%;
+  margin: auto;
+}
+#skills #chart-container #chart {
+  height: 100%;
+}
+#skills a {
+  color: rgba(255, 255, 255, 0.87);
+  text-decoration: none;
+}
+
+#experience {
+  padding: 1em;
+  margin: auto;
+  text-align: center;
+  color: #009688;
+  background: white;
+}
+#experience a {
+  color: rgba(0, 0, 0, 0.87);
+  text-decoration: none;
+}
+
+#contact {
+  background: #009688;
+  padding: 1em;
+  height: 100vh;
+}
+#contact input, #contact textarea {
+  padding: .5em;
+  display: block;
+  width: 75%;
+  margin: 1em auto;
+  border: none;
+  border-radius: none;
+}
+#contact textarea {
+  height: 5em;
+  resize: none;
+}
+#contact #cta {
+  font: 1em "Lato", Arial, sans-serif;
+  color: rgba(255, 255, 255, 0.87);
+  font-weight: 400;
+  background: rgba(255, 255, 255, 0.25);
+  transition: .5s;
+  width: auto;
+  padding: .5em 2em;
+}
+#contact #cta:hover {
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
