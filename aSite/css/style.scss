@@ -169,7 +169,7 @@ header {
 
 #welcome {
     position: relative;
-    background: linear-gradient(white, rgba(255,255,255,.5) 5%,rgba(255,255,255,.5) 95%, white), url(img/test.svg), white;
+    background: linear-gradient(white, rgba(255,255,255,.5) 5%,rgba(255,255,255,.5) 95%, white), url(../img/test.svg), white;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -211,6 +211,8 @@ header {
     color: $black;
     padding: 1em;
     background: white;
+    max-width: 768px;
+    margin: auto;
     p {
         padding: .5em 0;
     }

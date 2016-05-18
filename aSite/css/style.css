@@ -132,7 +132,7 @@ header {
 
 #welcome {
   position: relative;
-  background: linear-gradient(white, rgba(255, 255, 255, 0.5) 5%, rgba(255, 255, 255, 0.5) 95%, white), url(img/test.svg), white;
+  background: linear-gradient(white, rgba(255, 255, 255, 0.5) 5%, rgba(255, 255, 255, 0.5) 95%, white), url(../img/test.svg), white;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -161,7 +161,9 @@ header {
 #bio {
   color: rgba(0, 0, 0, 0.87);
   padding: 1em;
-  background: white; }
+  background: white;
+  max-width: 768px;
+  margin: auto; }
   #bio p {
     padding: .5em 0; }
 
