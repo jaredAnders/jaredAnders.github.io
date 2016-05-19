@@ -161,7 +161,7 @@ var options = {
                 zeroLineColor: 'rgba(255,255,255,.12)'
             }
         }
-}
+};
 
 var myChart = new Chart(ctx, {
     data: categories,
@@ -181,11 +181,11 @@ $('#chart').on('click', function (evt){
     activePoints = myChart.getElementAtEvent(evt);
     var index;
     var dataSet;
-    if (activePoints.length != 0){
+    if (activePoints.length !== 0){
         index = activePoints[0]._index;
         dataSet = activePoints[0]._chart.config.data.datasets[0].label;
         if (dataSet == 'categories'){
-            if (index == 0){
+            if (index === 0){
                 recreateChart(dev);
             }
             else if (index == 1){
@@ -216,7 +216,7 @@ function submitForm() {
         method: 'POST',
         data: $('#contactform').serialize(),
         dataType:'json'
-    })
+    });
     $('#contactform').fadeOut();
 };
 

@@ -6,7 +6,7 @@
 }
 
 body {
-  font: 1rem "Lato", Arial, sans-serif;
+  font: 1rem "Lato", "Arial", sans-serif;
   position: relative;
   z-index: 0;
 }
@@ -87,7 +87,7 @@ header #menu-toggle:focus {
   transition: .1s;
 }
 #menu ul a {
-  font: 1em "Lato", Arial, sans-serif;
+  font: 1em "Lato", "Arial", sans-serif;
   color: white;
   text-decoration: none;
 }
@@ -245,7 +245,7 @@ header #menu-toggle:focus {
   resize: none;
 }
 #contact #cta {
-  font: 1em "Lato", Arial, sans-serif;
+  font: 1em "Lato", "Arial", sans-serif;
   color: rgba(255, 255, 255, 0.87);
   font-weight: 400;
   background: rgba(255, 255, 255, 0.25);

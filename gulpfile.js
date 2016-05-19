@@ -7,21 +7,25 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     concat = require('gulp-concat'),
     notify = require('gulp-notify'),
+    browserSync = require('browser-sync').create(),
     del = require('del');
 
-// Styles
-gulp.task('styles', function() {
+gulp.task('styles', ['cleanCSS'], function() {
       return sass('src/scss/*.scss', { style: 'expanded' })
             .pipe(autoprefixer('last 2 version'))
             .pipe(gulp.dest('dist/css'))
             .pipe(rename({ suffix: '.min' }))
             .pipe(cssnano())
             .pipe(gulp.dest('dist/css'))
-            .pipe(notify({ message: 'Scss task complete' }));
+            .pipe(notify({ message: 'Styles task complete' }))
+            .pipe(browserSync.stream({match: '*.css'}));
 });
 
-// Scripts
-gulp.task('scripts', function() {
+gulp.task('styleSync', ['styles'], function() {
+    browserSync.reload();
+});
+
+gulp.task('scripts', ['cleanJS'], function() {
       return gulp.src('src/js/*.js')
             .pipe(jshint('.jshintrc'))
             .pipe(jshint.reporter('default'))
@@ -33,23 +37,28 @@ gulp.task('scripts', function() {
             .pipe(notify({ message: 'Scripts task complete' }));
 });
 
+gulp.task('scriptSync', ['scripts'], function() {
+    browserSync.reload();
+});
+
 // Clean
-gulp.task('clean', function() {
-    return del(['dist/css', 'dist/js']);
+gulp.task('cleanCSS', function() {
+    return del(['dist/css']);
 });
 
-// Default task
-gulp.task('default', ['clean'], function() {
-    gulp.start('styles', 'scripts');
+gulp.task('cleanJS', function() {
+    return del(['dist/js']);
 });
 
-// Watch
-gulp.task('watch', function() {
-
-    // Watch .scss files
-    gulp.watch('src/scss/*.scss', ['styles']);
-
-    // Watch .js files
-    gulp.watch('src/js/*.js', ['scripts']);
-
-});
+gulp.task('default', function() {
+    browserSync.init({
+        server: {
+            baseDir: './dist'
+        },
+        open: false
+    });
+    
+    gulp.watch('src/scss/*.scss', ['styleSync']);
+    gulp.watch('src/js/*.js', ['scriptSync']);
+    gulp.watch('dist/*.html').on('change', browserSync.reload);
+})

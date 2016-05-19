@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:100,200,300,400,700);
 
-$lato: 'Lato', Arial, sans-serif;
+$lato: 'Lato', 'Arial', sans-serif;
 $green: #009688;
 $white: rgba(255,255,255,.87);
 $black: rgba(0,0,0,.87);
@@ -22,6 +22,7 @@ body {
     z-index: 0;
 }
 
+//header
 header {
     position: fixed;
     top: 0;
