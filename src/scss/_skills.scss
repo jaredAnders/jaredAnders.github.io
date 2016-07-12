@@ -1,0 +1,35 @@
+#skills-cont {
+    //height: 75vh;
+    background: $bg8;
+    padding: 1em;
+    margin: auto;
+    text-align: center;
+    color: $white;
+    h2 {
+        text-align: left;
+    }
+    @media (min-width: 720px) {
+        padding: 1em 15%;
+        //height: 50vh;
+    }
+    @media (min-width: 900px) {
+        padding: 1em 20%;
+    }
+    @media (min-width: 1080px) {
+        padding: 1em 25%;
+    }
+    a {
+        color: $white;
+        text-decoration: none;
+    }
+}
+
+#chart-container {
+    padding: 1em;
+}
+#chart {
+    position: relative;
+    &:hover {
+        cursor: pointer;
+    }
+}

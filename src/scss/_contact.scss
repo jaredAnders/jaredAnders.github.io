@@ -1,0 +1,55 @@
+#contact {
+    background: $bg8;
+    margin: auto;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    form {
+        margin: auto;
+        width: 90%;
+        max-width: 768px;
+        @media (min-width:768px) {
+            width: 50%;
+        }
+    }
+    input, textarea {
+        padding: .5em;
+        display: block;
+        width: 100%;
+        margin: 1em auto;
+        border: none;
+        border-radius: 0;
+    }
+    textarea {
+        height: 7.5em;
+        resize: none;
+        @media (min-width: 768px){
+            height: 10em;
+        }
+    }
+    #cta {
+        font: 1.25em $lato;
+        color: $white;
+        //font-weight: 700;
+        background: $teal;
+        box-shadow: 0 0 1em rgba(black,.25);
+        transition: .3s ease-out;
+        width: 66%;
+        padding: 1em 2em;
+        cursor: pointer;
+        &:hover{
+            background: lighten($teal,10%);
+            box-shadow: 0 0 2em rgba(black,.5);
+        }
+        &:active{
+            background: darken($teal,10%);
+            box-shadow: none;
+        }
+    }
+}
+
+#thank-you {
+    font-size: 1.25em;
+    color: $white;
+}

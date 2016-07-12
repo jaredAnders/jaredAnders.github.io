@@ -1,0 +1,94 @@
+#experience-cont {
+    padding: 1em;
+    text-align: center;
+    color: $white;
+    background: $bg7;
+    h2 {
+        text-align: left;
+    }
+    @media (min-width: 720px) {
+        padding: .5em 15%;
+    }
+    @media (min-width: 900px) {
+        padding: .5em 20%;
+    }
+    @media (min-width: 1080px) {
+        padding: .5em 25%;
+    }
+    
+    & > div {
+        max-width: 768px;
+        margin: auto;
+    }
+    #timeline-container-basic {
+        color: rgba($bg9,.87);
+    }
+    .custom-show-btn {
+        position: absolute;
+        right: 20px;
+        bottom: -12px;
+        background-color: $teal;
+        border-radius: 50%;
+        box-shadow: 0 0 1em rgba(black,.25);
+        color: #FFFFFF;
+        height: 24px;
+        width: 24px;
+        transition: .3s ease-out;
+        &:hover {
+            cursor: pointer;
+            background-color: lighten($teal, 10%);
+            box-shadow: 0 0 2em rgba(black,.25);
+        }
+    }
+    .time-label {
+        color: $white;
+    }
+    .timeline-me-track:before {
+        background: rgba(white,.12);
+        top: 2.5em;
+        height: 91.5%;
+    }
+    .timeline-me-picto {
+        height: 1em;
+        width: 1em;
+        border: none;
+        background-color: white;
+        top : .6em;
+    }
+    .timeline-me-shortcontent, .timeline-me-fullcontent{
+        border-radius: 0;
+    }
+}
+
+.timeline-me-fullcontent {
+    transition: 1000 ease-out;
+}
+
+.timeline-me-smallitem.timeline-me-right  {
+    .timeline-me-content-container {
+        width: 50%;
+        margin-right: 0;
+    }
+    .timeline-me-shortcontent, .timeline-me-fullcontent {
+        border-right: .25em solid $blue;
+    }
+    .timeline-me-label {
+        margin-right: -.5em;
+    }
+    .custom-show-btn {
+        left: 20px;
+    }
+}
+
+.timeline-me-smallitem.timeline-me-left  {
+    .timeline-me-content-container {
+        width: 50% !important;
+        margin-left: 0 !important;
+    }
+    .timeline-me-shortcontent, .timeline-me-fullcontent {
+        border-left: .25em solid $red;
+    }
+    .timeline-me-label {
+        margin-left: -.5em !important;
+    }
+}

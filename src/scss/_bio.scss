@@ -1,0 +1,26 @@
+#bio-cont {
+    background: $bg7;
+    padding: 1em;
+    color: $white;
+    @media (min-width: 720px) {
+        padding: 1em 15%;
+    }
+    @media (min-width: 900px) {
+        padding: 1em 20%;
+    }
+    @media (min-width: 1080px) {
+        padding: 1em 25%;
+    }
+    a {
+        color: $teal;
+        text-decoration: none;
+        transition: .3s ease-out;
+        &:hover {
+            color: lighten($teal,10%);
+            text-decoration: underline;
+        }
+    }
+    p {
+        padding: .5em 0;
+    }
+}
