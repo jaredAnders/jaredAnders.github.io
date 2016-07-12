@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <!--
-Thanks for checking out my code! For this project, I wanted to create a digital resume to showcase my development and design capabilites.
+Thanks for checking out my code! For this project, I wanted to create a digital resume to showcase my development and design capabilites while exposing myself to new libraries and development techniques.
 
-You can reach me through the contact form at the bottom of the page. Let me know if you have any thoughts, feedback or would like to get to know me better.
+Keep in mind that I am self-taught, but try to keep my code as clean and organized as possible. This was my first time using gulp, sass, browsersync, chart.js, ajax and more.
 
-- Jared
+Please let me know if you have any thoughts, feedback or questions. You can reach me through the contact form at the bottom of the page.
 
+Thanks,
+
+Jared
+
+Up next:
+
+Enhancements to this site-
+    Recreate skills chart with D3.js
+    Add touch/swipe functionality to menu
+    Add SSL
+    Hide scrollbar
+    Refactor for performance optimization
+    Configure gulp to remove dead code
+
+Education-
+    JS Design Patterns - Udacity
+    Front-end Frameworks - Udacity
+    React
+    Ruby
+    Rails
 -->
 <html lang="en">
 <head>
@@ -14,9 +34,28 @@ You can reach me through the contact form at the bottom of the page. Let me know
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jared Gilbert</title>
     <link rel="stylesheet" href="css/style.min.css">
+    
+    <!--favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="img/manifest.json">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <meta name="msapplication-config" content="img/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    
 </head>
 
 <body>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-T2TJFB"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T2TJFB');</script>
+<!-- End Google Tag Manager -->
 
 <div id="menu">
    <ul>
@@ -24,9 +63,9 @@ You can reach me through the contact form at the bottom of the page. Let me know
        <a href="#skills"><li>skills</li></a>
        <a href="#experience"><li>experience</li></a>
        <ul id="icons">
-           <a href="#"><li><img src="img/linkedin.svg" alt="linkedin"></li></a>
-           <a href="#"><li><img src="img/angellist.svg" alt="angel list"></li></a>
-           <a href="#"><li><img src="" alt=""></li></a>
+           <a href="https://www.linkedin.com/in/jaredagilbert" target="_blank"><li><img src="img/linkedin.svg" alt="linkedin"></li></a>
+           <a href="https://angel.co/jared-gilbert" target="_blank"><li><img src="img/angellist.svg" alt="angel list"></li></a>
+           <a href="https://github.com/jaredAnders" target="_blank"><li><img src="img/github.svg" alt="github"></li></a>
            <a href="#contact"><li><img src="img/mail3.svg" id="mail" alt="send a message"></li></a>
        </ul>
    </ul>
@@ -36,67 +75,60 @@ You can reach me through the contact form at the bottom of the page. Let me know
 </div>
 
 <header role="navigation">
-    <div><img src="img/jagLogo.svg" id="logo" alt="Jared Anders Gilbert Logo"></div>
-    <div><img src="img/menu2.svg" id="menu-toggle"></div>
+    <div><a href="#"><img src="img/jagLogo.svg" id="logo" alt="logo"></a></div>
+    <div><img src="img/menu2.svg" id="menu-toggle" alt="menu toggle"></div>
 </header>
 
-<section id="welcome">
+<section id="cover">
     <div>
-        <h1><span>J</span>ARED <span>A</span>NDERS <span>G</span>ILBERT</h1>
-        <h3>front-end developer and digital marketing strategist</h3>
+        <h1><span>J</span>ARED <span>G</span>ILBERT</h1>
+        <h3>front-end developer and digital strategist</h3>
     </div>
+    <div id="graphic"></div>
+</section>
+
+<section id="bio-cont">
     <div>
-        <img src="img/0276.svg" id="poly" alt="">
+        <h2 id="bio" class="jump">bio</h2>
+
+        <p>I am a self-taught front-end developer with over 4 years of professional experience in roles spanning across IT, marketing, supply chain and operations.</p>
+
+        <p>Driven by a passion for leveraging technology to solve problems creatively, I've been spending my free time teaching myself the foundations of computer science and programming while staying up to date on emerging technologies and design trends.</p>
+        
+        <p>Please <a href="https://github.com/jaredAnders" target="_blank">check out my code</a>, and if you're interested in getting to know me better, please <a href="#contact">send me a message.</a></p>
+
     </div>
 </section>
-    
-    <section id="bio">
-       <h2>bio</h2>
-        <p>I am a self-taught front-end developer with over 3 years of professional experience in web development and digital marketing.</p>
-        
-        <p>Working in 5 roles over the past 4 years, I've begun to forge a career driven by my passion for leveraging technology to solve problems in creative ways.</p>
-        
-        <p>In my free time, I've been studying computer science while staying up to date on emerging technologies and design trends.</p>
-        
-        <p>I'm looking to join an experienced yet progressive team at a fast-paced, ambitious company in a role that supports my growth as a developer.</p>
-        
-        <p>If you're interested in getting to know me better and learning more about what I can do for you and your company, <a href="#contact">please send me a message.</a>
-        </p>
-        
-        <!--
-        <p>My dream is to define the digital presence of a brand that I believe in.</p>
-        
-        <p>I will be an active leader in crafting the best digital experience for your users.</p>
-        
-        <p>Outside of work, I enjoy all things music, including writing, playing, producing and attending live shows. I am also an avid investor, primarily in domestic tech stocks. In addition, I enjoy eating healthy and exercise regularly.</p>
-        -->
-        
-    </section>
-    
-    <section id="skills">
-        <div>Skills</div>
-        <div id="chart-container">
-            <canvas id="chart"></canvas>
-        </div>
-    </section>
-    
-    <section id="experience">
-        <div><a href="http://mickaelr.github.io/jquery-timelineMe/">Vertical Timeline</a></div>
-    </section>
-    
-    <section id="contact">
-        <form id="contactform" onsubmit="submitForm(); return false;">
-            <input type="text" name="name" placeholder="name">
-            <input type="email" name="email" placeholder="email">
-            <textarea name="message" placeholder="message"></textarea>
-            <input type="text" name="_gotcha" style="display:none" />
-            <input type="submit" value="Drop me a line mofuckaaaaa" id="cta">
-        </form>
-        
-    </section>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.3/Chart.min.js"></script>
-    <script src="js/script.min.js"></script>
-</body>
 
+<section id="skills-cont">
+    <h2 id="skills" class="jump">skills</h2>
+    <div id="chart-container">
+           <canvas id="chart" width="200" height="200"></canvas>
+    </div>
+</section>
+
+<section id="experience-cont">
+    <div>
+        <h2 id="experience" class="jump">experience</h2>
+        <div id="timeline-container-basic" type="text"></div>
+    </div>
+</section>
+
+<script>var submitForm;</script>
+
+<section id="contact">
+    <form id="contact-form" onsubmit="submitForm(); return false;">
+        <input type="text" name="name" placeholder="name">
+        <input type="email" name="email" placeholder="email">
+        <textarea name="message" placeholder="message"></textarea>
+        <input type="text" name="_gotcha" style="display:none" />
+        <input type="submit" value="Send" id="cta">
+    </form>
+</section>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.min.js"></script>
+<script src="js/bundle.min.js"></script>
+
+</body>
 </html>
