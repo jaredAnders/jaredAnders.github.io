@@ -1,18 +1,18 @@
 {
   "name": "personal-site",
   "version": "1.0.0",
-  "description": "Locaal sandbox for personal site",
+  "description": "Personal site",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://jgil312@bitbucket.org/jgil312/personal-site.git"
+    "url": "git+https://github.com/jaredAnders/jaredAnders.github.io.git"
   },
   "author": "Jared Gilbert",
   "license": "MIT",
-  "homepage": "https://bitbucket.org/jgil312/personal-site#readme",
+  "homepage": "https://jaredanders.github.io",
   "devDependencies": {
     "browser-sync": "^2.12.8",
     "del": "^2.2.0",
