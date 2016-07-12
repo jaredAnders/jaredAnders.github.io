@@ -6,9 +6,15 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     rename = require('gulp-rename'),
     concat = require('gulp-concat'),
+    webpack = require('webpack-stream'),
     notify = require('gulp-notify'),
     browserSync = require('browser-sync').create(),
     del = require('del');
+
+var wpConfig = {
+    output: {
+        filename: 'bundle.js'
+}};
 
 gulp.task('styles', ['cleanCSS'], function() {
       return sass('src/scss/*.scss', { style: 'expanded' })
@@ -29,7 +35,7 @@ gulp.task('scripts', ['cleanJS'], function() {
       return gulp.src('src/js/*.js')
             .pipe(jshint('.jshintrc'))
             .pipe(jshint.reporter('default'))
-            .pipe(concat('script.js'))
+            .pipe(webpack(wpConfig))
             .pipe(gulp.dest('dist/js'))
             .pipe(rename({ suffix: '.min' }))
             .pipe(uglify())

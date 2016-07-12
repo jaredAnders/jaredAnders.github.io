@@ -25,6 +25,12 @@
     "gulp-rename": "^1.2.2",
     "gulp-ruby-sass": "^2.0.6",
     "gulp-uglify": "^1.5.3",
-    "jshint": "^2.9.2"
+    "jshint": "^2.9.2",
+    "webpack": "^1.13.1",
+    "webpack-stream": "^3.2.0"
+  },
+  "dependencies": {
+    "jquery": "^2.2.4",
+    "jquery-timelineme": "^0.1.7"
   }
 }
