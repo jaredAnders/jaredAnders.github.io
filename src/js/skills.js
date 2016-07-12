@@ -1,39 +1,3 @@
-//header
-$(window).scroll(function(){
-    var a = $(window).scrollTop();
-    if (a >0) {
-        $('header').addClass('scrolled');
-    }
-    else {
-        $('header').removeClass('scrolled');
-    }
-});
-
-//menu
-$('#menu-toggle').click(function() {
-    $('.overlay').addClass('open', 300);
-    $('#menu').css(
-        'transform','translateX(0%)'
-    );
-});
-
-$('.overlay').on('click',function(){
-    $('.overlay').removeClass('open', 300);
-    $('#menu').css(
-        'transform','translateX(100%)'
-    );
-});
-
-//close-nav function, on buttons
-
-/*
-$('#menu li').click(function(){
-    
-    $('#menu li').removeClass('selected',0);
-    $(this).addClass('selected',0);
-});
-*/
-
 //chart data
 
 var categories = {
@@ -104,29 +68,112 @@ var analytics = {
     ],
     datasets: [
         {
-        data: [7,9,3,7,9]
+        data: [7,9,5,5,7]
         }
     ]
 };
 
+//var data = {
+//    categories: {
+//    labels: [
+//        'Front-end Development',
+//        'Platforms',
+//        'Design',
+//        'Analytics'
+//    ],
+//    datasets: [
+//        {
+//            label: 'categories',
+//            data: [9,5,5,9]
+//        }
+//    ]
+//},
+//    dev: {
+//        labels: [
+//            'HTML',
+//            'Sass/CSS',
+//            'JavaScript',
+//            'jQuery',
+//            'Git'
+//        ],
+//        datasets: [
+//            {
+//            data: [9,9,5,7,5],
+//            }
+//        ]
+//    },
+//    platforms: {
+//        labels: [
+//            'Drupal',
+//            'HubSpot',
+//            'IBM Websphere Commerce',
+//            'Umbraco'
+//        ],
+//        datasets: [
+//            {
+//            data: [9,9,5,7]
+//            }
+//        ]
+//    },
+//    design: {
+//        labels: [
+//            'Illustrator',
+//            'Photoshop',
+//            'Sketch',
+//            'InVision'
+//        ],
+//        datasets: [
+//            {
+//            data: [5,9,3,7]
+//            }
+//        ]
+//    },
+//    analytics: {
+//        labels: [
+//            'Google Tag Manager',
+//            'Google Analytics',
+//            'Tableau',
+//            'Heap',
+//            'Hotjar'
+//        ],
+//        datasets: [
+//            {
+//            data: [7,9,3,7,9]
+//            }
+//        ]
+//    }
+//    
+//};
+
 //chart config
 var ctx = document.getElementById('chart').getContext('2d');
 
+ctx.scale(2,2);
+
+//var resizeChart = function(){
+//    $('#chart').width($('#chart').parent().innerWidth()); $('#chart').height($('#chart').parent().innerHeight());
+//};
+
+//resizeChart();
+
 var options = {
         responsive: true,
+        maintainAspectRatio: false,
         color: 'rgba(255,255,255,.87)',
         defaultColor: 'rgba(255,255,255,.87)',
         defaultFontColor: 'rgba(255,255,255,.87)',
         fontColor: 'rgba(255,255,255,.87)',
         pointLabelFontColor: 'rgba(255,255,255,.87)',
+        percentageInnerCutout: 50,
         elements: {
             line: {
                 backgroundColor: 'rgba(255, 255, 255, 0.5)',
-                borderColor: 'transparent'
+                borderColor: 'transparent',
+                lineTension: 500
             },
             point: {
-                backgroundColor: 'rgba(224, 64, 251, 0.75)',
-                borderColor: 'rgba(224, 64, 251, .87)',
+                backgroundColor: 'rgba(29, 233, 182, .75)',
+                borderColor: 'rgba(29, 233, 182, .87)',
                 borderWidth: 3,
                 hoverBorderWidth: 5,
                 radius: 10,
@@ -151,7 +198,7 @@ var options = {
                 max: 10
             },
             pointLabels: {
-                fontColor: 'rgba(255,255,255,.87)'
+                fontColor: 'rgba(255,255,255,.7)'
             },
             angleLines: {
                 color: 'rgba(255,255,255,.12)'
@@ -159,7 +206,11 @@ var options = {
             gridLines: {
                 color: 'rgba(255,255,255,.12)',
                 zeroLineColor: 'rgba(255,255,255,.12)'
-            }
+            },
+            margins: {
+                bottom:25
+            },
+            paddingBottom: 25
         }
 };
 
@@ -170,15 +221,15 @@ var myChart = new Chart(ctx, {
 });
 
 function recreateChart (data) {
+    
+//    resizeChart();
     myChart.destroy();
     ctx = document.getElementById('chart').getContext('2d');
     myChart = new Chart(ctx, {data: data, type: 'radar', options: options});
 }
 
-var activePoints;
-
 $('#chart').on('click', function (evt){
-    activePoints = myChart.getElementAtEvent(evt);
+    var activePoints = myChart.getElementAtEvent(evt);
     var index;
     var dataSet;
     if (activePoints.length !== 0){
@@ -206,32 +257,3 @@ $('#chart').on('click', function (evt){
         recreateChart(categories);
     }
 });
-
-//form
-var url = '//formspree.io/' + 'pciowr20' + '@robot.' + 'zapier.com';
-
-function submitForm() {
-    $.ajax({
-        url: url,
-        method: 'POST',
-        data: $('#contactform').serialize(),
-        dataType:'json'
-    });
-    $('#contactform').fadeOut();
-};
-
-var test = {
-    dev: {
-        category: 'Development',
-        skills: [
-            {
-            title: 'HTML',
-            level: 3
-            },
-            {
-            title: 'Sass/CSS',
-            level: 3
-            }
-        ]
-    }
-};
