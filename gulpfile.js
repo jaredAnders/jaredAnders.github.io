@@ -59,12 +59,12 @@ gulp.task('cleanJS', function() {
 gulp.task('default', function() {
     browserSync.init({
         server: {
-            baseDir: './dist'
+            //baseDir: './dist'
         },
         open: false
     });
     
     gulp.watch('src/scss/*.scss', ['styleSync']);
     gulp.watch('src/js/*.js', ['scriptSync']);
-    gulp.watch('dist/*.html').on('change', browserSync.reload);
+    gulp.watch('*.html').on('change', browserSync.reload);
 })
