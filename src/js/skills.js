@@ -2,73 +2,79 @@
 
 var categories = {
     labels: [
-        'Front-end Development',
-        'Platforms',
-        'Design',
+        'Front-end',
+        'Back-end',
+        // 'Design',
         'Analytics'
     ],
     datasets: [
         {
             label: 'categories',
-            data: [9,5,5,9]
+            data: [9,7,9]
         }
     ]
 };
 
-var dev = {
+var frontEnd = {
     labels: [
         'HTML',
         'Sass/CSS',
         'JavaScript',
         'jQuery',
-        'Git'
+        'JSON',
+        'AJAX',
+        'Bootstrap',
+        'Materialize.css'
     ],
     datasets: [
         {
-        data: [9,9,5,7,5],
+        data: [9,9,7,7,7,5,5,7],
         }
     ]
 };
 
-var platforms = {
+var backEnd = {
     labels: [
-        'Drupal',
-        'HubSpot',
-        'IBM Websphere Commerce',
-        'Umbraco'
+        'Ruby',
+        'Rails',
+        'Git/GitHub',
+        'Heroku',
+        'AWS',
+        'TDD'
     ],
     datasets: [
         {
-        data: [9,9,5,7]
+        data: [7,9,9,7,5,5]
         }
     ]
 };
 
-var design = {
-    labels: [
-        'Illustrator',
-        'Photoshop',
-        'Sketch',
-        'InVision'
-    ],
-    datasets: [
-        {
-        data: [5,9,3,7]
-        }
-    ]
-};
+// var design = {
+//     labels: [
+//         'Illustrator',
+//         'Photoshop',
+//         'Sketch',
+//         'InVision'
+//     ],
+//     datasets: [
+//         {
+//         data: [5,9,3,7]
+//         }
+//     ]
+// };
 
 var analytics = {
     labels: [
+        'Tableau',
+        'Excel',
         'Google Tag Manager',
         'Google Analytics',
-        'Tableau',
         'Heap',
         'Hotjar'
     ],
     datasets: [
         {
-        data: [7,9,5,5,7]
+        data: [5,9,7,9,7,7]
         }
     ]
 };
@@ -88,7 +94,7 @@ var analytics = {
 //        }
 //    ]
 //},
-//    dev: {
+//    frontEnd: {
 //        labels: [
 //            'HTML',
 //            'Sass/CSS',
@@ -102,7 +108,7 @@ var analytics = {
 //            }
 //        ]
 //    },
-//    platforms: {
+//    backEnd: {
 //        labels: [
 //            'Drupal',
 //            'HubSpot',
@@ -142,7 +148,7 @@ var analytics = {
 //            }
 //        ]
 //    }
-//    
+//
 //};
 
 //chart config
@@ -169,7 +175,7 @@ var options = {
             line: {
                 backgroundColor: 'rgba(255, 255, 255, 0.5)',
                 borderColor: 'transparent',
-                lineTension: 500
+                tension: -.25
             },
             point: {
                 backgroundColor: 'rgba(29, 233, 182, .75)',
@@ -221,7 +227,7 @@ var myChart = new Chart(ctx, {
 });
 
 function recreateChart (data) {
-    
+
 //    resizeChart();
     myChart.destroy();
     ctx = document.getElementById('chart').getContext('2d');
@@ -237,15 +243,15 @@ $('#chart').on('click', function (evt){
         dataSet = activePoints[0]._chart.config.data.datasets[0].label;
         if (dataSet == 'categories'){
             if (index === 0){
-                recreateChart(dev);
+                recreateChart(frontEnd);
             }
             else if (index == 1){
-                recreateChart(platforms);
+                recreateChart(backEnd);
             }
+            // else if (index == 2){
+            //     recreateChart(design);
+            // }
             else if (index == 2){
-                recreateChart(design);
-            }
-            else if (index == 3){
                 recreateChart(analytics);
             }
         }

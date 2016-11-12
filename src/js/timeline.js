@@ -7,7 +7,7 @@ var items = [
       type: 'smallItem',
       label: '8/16',
       shortContent: '<b>Full-stack Web Development</b><br> <i>The Firehose Project</i>',
-      fullContent: 'Ruby, Rails & JavaScript<br>Programming fundamentals<br>Development tools and workflows',
+      fullContent: 'Ruby, Rails & JavaScript<br>Computer Science fundamentals<br>Development tools and workflows',
       showMore: '<a class="custom-show-btn"><i class="material-icons">add</i></a>',
       showLess: '<a class="custom-show-btn"><i class="material-icons">remove</i></a>',
       forcePosition: 'right'
