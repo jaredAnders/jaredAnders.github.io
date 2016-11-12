@@ -912,6 +912,7 @@ textarea {
   position: relative;
 }
 .timeline-me-bigitem .timeline-me-shortcontent, .timeline-me-bigitem .timeline-me-fullcontent {
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transform-style: preserve-3d;
   position: absolute;
@@ -1405,6 +1406,14 @@ body {
   position: relative;
   z-index: 0;
   background: #37474F;
+}
+
+::-moz-selection {
+  background-color: rgba(29, 233, 182, 0.5);
+}
+
+::selection {
+  background-color: rgba(29, 233, 182, 0.5);
 }
 
 h2 {

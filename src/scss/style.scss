@@ -21,6 +21,10 @@ body {
     background: $bg8;
 }
 
+::selection {
+  background-color: rgba($teal, .5);
+}
+
 h2 {
     font-weight: 400;
     font-size: 1.25em;
