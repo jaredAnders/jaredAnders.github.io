@@ -5,6 +5,24 @@ var timelineMe = require('jquery-timelineme');
 var items = [
     {
       type: 'smallItem',
+      label: '8/16',
+      shortContent: '<b>Full-stack Web Development</b><br> <i>The Firehose Project</i>',
+      fullContent: 'Ruby, Rails & JavaScript<br>Programming fundamentals<br>Development tools and workflows',
+      showMore: '<a class="custom-show-btn"><i class="material-icons">add</i></a>',
+      showLess: '<a class="custom-show-btn"><i class="material-icons">remove</i></a>',
+      forcePosition: 'right'
+    },
+    {
+      type: 'smallItem',
+      label: '8/16',
+      shortContent: '<b>Digital Developer</b><br> <i>Injured Workers Pharmacy LLC</i>',
+      fullContent: 'Digital strategy and web analytics',
+      showMore: '<a class="custom-show-btn"><i class="material-icons">add</i></a>',
+      showLess: '<a class="custom-show-btn"><i class="material-icons">remove</i></a>',
+      forcePosition: 'left'
+    },
+    {
+      type: 'smallItem',
       label: '6/16',
       shortContent: '<b>Object-Oriented JavaScript</b> <i>Udacity</i>',
       fullContent: 'Intro to object-oriented programming in JavaScript',
@@ -133,6 +151,6 @@ var items = [
 
 $('#timeline-container-basic').timelineMe({
     labelClass: 'time-label',
-    shortContentClass: 'time-short', 
+    shortContentClass: 'time-short',
     items: items
 });

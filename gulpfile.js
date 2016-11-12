@@ -63,7 +63,7 @@ gulp.task('default', function() {
         },
         open: false
     });
-    
+
     gulp.watch('src/scss/*.scss', ['styleSync']);
     gulp.watch('src/js/*.js', ['scriptSync']);
     gulp.watch('*.html').on('change', browserSync.reload);
