@@ -1,8 +1,8 @@
 # jaredAnders.github.io
-This site was originally built to serve as a digital resume while showcasing my development skill set. As a self-taught front-end developer, I began building it with a limited knowledge of HTML, CSS and JS and ended up exposing myself to new libraries and development techniques.
+This site was built to serve as a digital resume while showcasing my development skill set. As a self-taught front-end developer, I began building it with a limited knowledge of HTML, CSS and JS and ended up exposing myself to new libraries and development techniques.
 
 ## Technologies Explored
-* Git
+* Git/GitHub
 * Gulp
 * Sass
 * BrowserSync
@@ -11,7 +11,6 @@ This site was originally built to serve as a digital resume while showcasing my 
 * SVG
 
 ## TODO
-* Update content for bio, timeline, skills
 * Add portfolio section w/links to projects
 * Rebuild with React
 * Replace skills chart with D3 based sunburst chart

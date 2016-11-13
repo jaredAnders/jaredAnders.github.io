@@ -1,32 +1,32 @@
 #cover {
-        
+
     width: 100%;
     height: 90vh;
     background: $bg8;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    
+
     padding: 2.5em 1em 1em;
-    
+
     color: $white;
     text-align: center;
-    
+
     //position: relative;
-    
+
     //background: linear-gradient(white, rgba(255,255,255,.5) 5%,rgba(255,255,255,.5) 95%, white), url(../img/test.svg), white;
     //background: linear-gradient($bg9,$bg8);
-    
+
     //background: url(../img/bg.svg);
     //background-size: cover;
-    
+
     //margin-top: 3.5em;
 
     @media (min-width: 720px) {
         height: 100vh;
     }
-    
+
     h1, h3 {
         padding: .1em;
         font-weight: 300;
@@ -35,7 +35,7 @@
         font-size: 125%;
     }
     h3 {
-        font-size: 1em;
+        font-size: 1.25em;
     }
 }
 

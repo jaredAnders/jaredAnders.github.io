@@ -1149,7 +1149,7 @@ header #menu-toggle:focus {
   font-size: 125%;
 }
 #cover h3 {
-  font-size: 1em;
+  font-size: 1.25em;
 }
 
 #graphic {
@@ -1418,7 +1418,7 @@ body {
 
 h2 {
   font-weight: 400;
-  font-size: 1.25em;
+  font-size: 1.5em;
 }
 
 .jump:before {
