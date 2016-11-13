@@ -412,7 +412,7 @@
 	var items = [
 	    {
 	      type: 'smallItem',
-	      label: '8/16',
+	      label: '8/16 - present',
 	      shortContent: '<b>Full-stack Web Development</b><br> <i>The Firehose Project</i>',
 	      fullContent: 'Ruby, Rails & JavaScript<br>Computer Science fundamentals<br>Development tools and workflows',
 	      showMore: '<a class="custom-show-btn"><i class="material-icons">add</i></a>',
@@ -421,7 +421,7 @@
 	    },
 	    {
 	      type: 'smallItem',
-	      label: '8/16',
+	      label: '8/16 - present',
 	      shortContent: '<b>Digital Developer</b><br> <i>Injured Workers Pharmacy LLC</i>',
 	      fullContent: 'Digital strategy and web analytics',
 	      showMore: '<a class="custom-show-btn"><i class="material-icons">add</i></a>',
@@ -466,7 +466,7 @@
 	    },
 	    {
 	      type: 'smallItem',
-	      label: '1/16 - 2/16',
+	      label: '1 - 2/16',
 	      shortContent: '<b>CS50x</b> <i>edX</i>',
 	      fullContent: 'Introduction to Computer Science, HarvardX',
 	      showMore: '<a class="custom-show-btn"><i class="material-icons">add</i></a>',
@@ -475,7 +475,7 @@
 	    },
 	    {
 	      type: 'smallItem',
-	      label: '4/15 - present',
+	      label: '4/15 - 8/16',
 	      shortContent: '<b>e-Marketing Coordinator</b> <i>Injured Workers Pharmacy LLC</i>',
 	      fullContent: 'Manage development of web application, design and develop landing pages in Drupal, analyze web traffic and coordinate digital marketing strategy',
 	      showMore: '<a class="custom-show-btn"><i class="material-icons">add</i></a>',
