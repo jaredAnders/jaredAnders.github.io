@@ -15,8 +15,8 @@ var items = [
     {
       type: 'smallItem',
       label: '8/16 - present',
-      shortContent: '<b>Digital Developer</b><br> <i>Injured Workers Pharmacy LLC</i>',
-      fullContent: '<b>Digital Developer</b><br> <i>Injured Workers Pharmacy LLC</i><br>- Digital strategy and web analytics',
+      shortContent: '<b>Digital Developer</b><br> <i>Injured Workers Pharmacy</i>',
+      fullContent: '<b>Digital Developer</b><br> <i>Injured Workers Pharmacy</i><br>- Digital strategy and web analytics',
       showMore: '<a class="custom-show-btn"><i class="material-icons">add</i></a>',
       showLess: '<a class="custom-show-btn"><i class="material-icons">remove</i></a>',
       forcePosition: 'left'
@@ -54,8 +54,8 @@ var items = [
     {
       type: 'smallItem',
       label: '4/15 - 8/16',
-      shortContent: '<b>e-Marketing Coordinator</b> <i>Injured Workers Pharmacy LLC</i>',
-      fullContent: '<b>e-Marketing Coordinator</b> <i>Injured Workers Pharmacy LLC</i><br>- Managed 3rd-party development of web application<br>- Designed and developed landing pages in Drupal<br>- Analyzed web traffic<br>- Coordinated digital marketing strategy',
+      shortContent: '<b>e-Marketing Coordinator</b> <i>Injured Workers Pharmacy</i>',
+      fullContent: '<b>e-Marketing Coordinator</b> <i>Injured Workers Pharmacy</i><br>- Managed 3rd-party development of web application<br>- Designed and developed landing pages in Drupal<br>- Analyzed web traffic<br>- Coordinated digital marketing strategy',
       showMore: '<a class="custom-show-btn"><i class="material-icons">add</i></a>',
       showLess: '<a class="custom-show-btn"><i class="material-icons">remove</i></a>',
       forcePosition: 'left'
@@ -75,8 +75,8 @@ var items = [
     {
       type: 'smallItem',
       label: '6/14 - 3/15',
-      shortContent: '<b>eCommerce Marketing Specialist</b> <i>Trivantage LLC</i>',
-      fullContent: '<b>eCommerce Marketing Specialist</b> <i>Trivantage LLC</i><br>- Developed landing pages and administered live chat',
+      shortContent: '<b>eCommerce Marketing Specialist</b> <i>Trivantage</i>',
+      fullContent: '<b>eCommerce Marketing Specialist</b> <i>Trivantage</i><br>- Developed landing pages and administered live chat',
       showMore: '<a class="custom-show-btn"><i class="material-icons">add</i></a>',
       showLess: '<a class="custom-show-btn"><i class="material-icons">remove</i></a>',
       forcePosition: 'left'
@@ -90,8 +90,8 @@ var items = [
     {
       type: 'smallItem',
       label: '5/13 - 5/14',
-      shortContent: '<b>Supply Chain Specialist</b> <i>Trivantage LLC</i>',
-      fullContent: '<b>Supply Chain Specialist</b> <i>Trivantage LLC</i><br>- Developed intranet using Google Apps Script and Google Apps for Work',
+      shortContent: '<b>Supply Chain Specialist</b> <i>Trivantage</i>',
+      fullContent: '<b>Supply Chain Specialist</b> <i>Trivantage</i><br>- Developed intranet using Google Apps Script and Google Apps for Work',
       showMore: '<a class="custom-show-btn"><i class="material-icons">add</i></a>',
       showLess: '<a class="custom-show-btn"><i class="material-icons">remove</i></a>',
       forcePosition: 'left'
@@ -99,8 +99,8 @@ var items = [
     {
       type: 'smallItem',
       label: '1/13 - 4/13',
-      shortContent: '<b>Inventory Control and Marketing Associate</b> <i>Trivantage LLC</i>',
-      fullContent: '<b>Inventory Control and Marketing Associate</b> <i>Trivantage LLC</i><br>- Processed orders and optimized ROI for marketing program',
+      shortContent: '<b>Inventory Control and Marketing Associate</b> <i>Trivantage</i>',
+      fullContent: '<b>Inventory Control and Marketing Associate</b> <i>Trivantage</i><br>- Processed orders and optimized ROI for marketing program',
       showMore: '<a class="custom-show-btn"><i class="material-icons">add</i></a>',
       showLess: '<a class="custom-show-btn"><i class="material-icons">remove</i></a>',
       forcePosition: 'left'
@@ -117,8 +117,8 @@ var items = [
     {
       type: 'smallItem',
       label: '6/12 - 12/12',
-      shortContent: '<b>Marketing Intern</b> <i>Trivantage LLC</i>',
-      fullContent: '<b>Marketing Intern</b> <i>Trivantage LLC</i><br>- Researched marketing strategies and created business plans for expanding into new markets',
+      shortContent: '<b>Marketing Intern</b> <i>Trivantage</i>',
+      fullContent: '<b>Marketing Intern</b> <i>Trivantage</i><br>- Researched marketing strategies and created business plans for expanding into new markets',
       showMore: '<a class="custom-show-btn"><i class="material-icons">add</i></a>',
       showLess: '<a class="custom-show-btn"><i class="material-icons">remove</i></a>',
       forcePosition: 'left'
