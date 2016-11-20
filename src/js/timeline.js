@@ -109,7 +109,7 @@ var items = [
       type: 'smallItem',
       label: '2013',
       shortContent: '<b>Bachelor of Science, Music Technology</b> <i>Elon University</i>',
-      fullContent: '- Music production, recording and theory',
+      fullContent: '<b>Bachelor of Science, Music Technology</b> <i>Elon University</i><br>- Music production, recording and theory',
       showMore: '<a class="custom-show-btn"><i class="material-icons">add</i></a>',
       showLess: '<a class="custom-show-btn"><i class="material-icons">remove</i></a>',
       forcePosition: 'right'
