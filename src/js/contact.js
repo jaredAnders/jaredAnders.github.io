@@ -1,7 +1,6 @@
 //form
-var url = '//formspree.io/' + 'pciowr20' + '@robot.' + 'zapier.com';
-
 submitForm = function () {
+    var url = '//formspree.io/pciowr20' + '@robot.zapier.com';
     $.ajax({
         url: url,
         method: 'POST',
@@ -11,4 +10,4 @@ submitForm = function () {
     $('#contact-form').fadeOut(300, function() {
         $('#contact').html('<div id="thank-you">Thank you!</div>').hide().fadeIn('slow');
     });
-}
+};

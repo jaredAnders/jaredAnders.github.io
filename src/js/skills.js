@@ -21,14 +21,13 @@ var frontEnd = {
         'Sass/CSS',
         'JavaScript',
         'jQuery',
-        'JSON',
-        'AJAX',
+        'AJAX/JSON',
         'Bootstrap',
         'Materialize.css'
     ],
     datasets: [
         {
-        data: [9,9,7,7,7,5,5,7],
+        data: [9,9,7,7,7,5,7],
         }
     ]
 };
@@ -69,12 +68,11 @@ var analytics = {
         'Excel',
         'Google Tag Manager',
         'Google Analytics',
-        'Heap',
-        'Hotjar'
+        'Heap'
     ],
     datasets: [
         {
-        data: [5,9,7,9,7,7]
+        data: [5,9,7,9,7]
         }
     ]
 };
@@ -175,7 +173,7 @@ var options = {
             line: {
                 backgroundColor: 'rgba(255, 255, 255, 0.5)',
                 borderColor: 'transparent',
-                tension: -.25
+                tension: -0.25
             },
             point: {
                 backgroundColor: 'rgba(29, 233, 182, .75)',

@@ -7,7 +7,7 @@ var items = [
       type: 'smallItem',
       label: '8/16 - present',
       shortContent: '<b>Full-stack Web Development</b><br> <i>The Firehose Project</i>',
-      fullContent: '<b>Full-stack Web Development</b><br> <i>The Firehose Project</i><br>- Ruby, Rails & JavaScript<br>- Computer Science fundamentals<br>- Development tools and workflows',
+      fullContent: '<b>Full-stack Web Development</b><br> <i>The Firehose Project</i><br>- Ruby, Rails & JavaScript<br>- Computer Science fundamentals and algorithms<br>- Development tools and workflows',
       showMore: '<a class="custom-show-btn"><i class="material-icons">add</i></a>',
       showLess: '<a class="custom-show-btn"><i class="material-icons">remove</i></a>',
       forcePosition: 'right'
@@ -123,7 +123,7 @@ var items = [
       showLess: '<a class="custom-show-btn"><i class="material-icons">remove</i></a>',
       forcePosition: 'left'
     }
-  ]
+  ];
 
 $('#timeline-container-basic').timelineMe({
     labelClass: 'time-label',

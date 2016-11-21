@@ -56,9 +56,8 @@
 /***/ function(module, exports) {
 
 	//form
-	var url = '//formspree.io/' + 'pciowr20' + '@robot.' + 'zapier.com';
-
 	submitForm = function () {
+	    var url = '//formspree.io/pciowr20' + '@robot.zapier.com';
 	    $.ajax({
 	        url: url,
 	        method: 'POST',
@@ -68,7 +67,8 @@
 	    $('#contact-form').fadeOut(300, function() {
 	        $('#contact').html('<div id="thank-you">Thank you!</div>').hide().fadeIn('slow');
 	    });
-	}
+	};
+
 
 /***/ },
 /* 2 */
@@ -108,7 +108,7 @@
 /***/ function(module, exports) {
 
 	//var jQueryMobile = require('jquery-mobile');
-	    
+
 	//menu
 	var menuToggle = function() {
 	    if (!$('.overlay').hasClass('open')) {
@@ -118,7 +118,7 @@
 	        $('.overlay').removeClass('open', 300);
 	        $('#menu').css('transform', 'translateX(100%)');
 	    }
-	}
+	};
 
 	$('#menu-toggle').on('click', menuToggle);
 	$('.overlay').on('click', menuToggle);
@@ -127,7 +127,6 @@
 	//$(function(){
 	//    $(window).on('swipeleft',menuToggle);
 	//}
-
 
 
 /***/ },
@@ -157,14 +156,13 @@
 	        'Sass/CSS',
 	        'JavaScript',
 	        'jQuery',
-	        'JSON',
-	        'AJAX',
+	        'AJAX/JSON',
 	        'Bootstrap',
 	        'Materialize.css'
 	    ],
 	    datasets: [
 	        {
-	        data: [9,9,7,7,7,5,5,7],
+	        data: [9,9,7,7,7,5,7],
 	        }
 	    ]
 	};
@@ -205,12 +203,11 @@
 	        'Excel',
 	        'Google Tag Manager',
 	        'Google Analytics',
-	        'Heap',
-	        'Hotjar'
+	        'Heap'
 	    ],
 	    datasets: [
 	        {
-	        data: [5,9,7,9,7,7]
+	        data: [5,9,7,9,7]
 	        }
 	    ]
 	};
@@ -311,7 +308,7 @@
 	            line: {
 	                backgroundColor: 'rgba(255, 255, 255, 0.5)',
 	                borderColor: 'transparent',
-	                tension: -.25
+	                tension: -0.25
 	            },
 	            point: {
 	                backgroundColor: 'rgba(29, 233, 182, .75)',
@@ -414,7 +411,7 @@
 	      type: 'smallItem',
 	      label: '8/16 - present',
 	      shortContent: '<b>Full-stack Web Development</b><br> <i>The Firehose Project</i>',
-	      fullContent: '<b>Full-stack Web Development</b><br> <i>The Firehose Project</i><br>- Ruby, Rails & JavaScript<br>- Computer Science fundamentals<br>- Development tools and workflows',
+	      fullContent: '<b>Full-stack Web Development</b><br> <i>The Firehose Project</i><br>- Ruby, Rails & JavaScript<br>- Computer Science fundamentals and algorithms<br>- Development tools and workflows',
 	      showMore: '<a class="custom-show-btn"><i class="material-icons">add</i></a>',
 	      showLess: '<a class="custom-show-btn"><i class="material-icons">remove</i></a>',
 	      forcePosition: 'right'
@@ -422,8 +419,8 @@
 	    {
 	      type: 'smallItem',
 	      label: '8/16 - present',
-	      shortContent: '<b>Digital Developer</b><br> <i>Injured Workers Pharmacy LLC</i>',
-	      fullContent: '<b>Digital Developer</b><br> <i>Injured Workers Pharmacy LLC</i><br>- Digital strategy and web analytics',
+	      shortContent: '<b>Digital Developer</b><br> <i>Injured Workers Pharmacy</i>',
+	      fullContent: '<b>Digital Developer</b><br> <i>Injured Workers Pharmacy</i><br>- Digital strategy and web analytics',
 	      showMore: '<a class="custom-show-btn"><i class="material-icons">add</i></a>',
 	      showLess: '<a class="custom-show-btn"><i class="material-icons">remove</i></a>',
 	      forcePosition: 'left'
@@ -461,8 +458,8 @@
 	    {
 	      type: 'smallItem',
 	      label: '4/15 - 8/16',
-	      shortContent: '<b>e-Marketing Coordinator</b> <i>Injured Workers Pharmacy LLC</i>',
-	      fullContent: '<b>e-Marketing Coordinator</b> <i>Injured Workers Pharmacy LLC</i><br>- Managed 3rd-party development of web application<br>- Designed and developed landing pages in Drupal<br>- Analyzed web traffic<br>- Coordinated digital marketing strategy',
+	      shortContent: '<b>e-Marketing Coordinator</b> <i>Injured Workers Pharmacy</i>',
+	      fullContent: '<b>e-Marketing Coordinator</b> <i>Injured Workers Pharmacy</i><br>- Managed 3rd-party development of web application<br>- Designed and developed landing pages in Drupal<br>- Analyzed web traffic<br>- Coordinated digital marketing strategy',
 	      showMore: '<a class="custom-show-btn"><i class="material-icons">add</i></a>',
 	      showLess: '<a class="custom-show-btn"><i class="material-icons">remove</i></a>',
 	      forcePosition: 'left'
@@ -482,8 +479,8 @@
 	    {
 	      type: 'smallItem',
 	      label: '6/14 - 3/15',
-	      shortContent: '<b>eCommerce Marketing Specialist</b> <i>Trivantage LLC</i>',
-	      fullContent: '<b>eCommerce Marketing Specialist</b> <i>Trivantage LLC</i><br>- Developed landing pages and administered live chat',
+	      shortContent: '<b>eCommerce Marketing Specialist</b> <i>Trivantage</i>',
+	      fullContent: '<b>eCommerce Marketing Specialist</b> <i>Trivantage</i><br>- Developed landing pages and administered live chat',
 	      showMore: '<a class="custom-show-btn"><i class="material-icons">add</i></a>',
 	      showLess: '<a class="custom-show-btn"><i class="material-icons">remove</i></a>',
 	      forcePosition: 'left'
@@ -497,8 +494,8 @@
 	    {
 	      type: 'smallItem',
 	      label: '5/13 - 5/14',
-	      shortContent: '<b>Supply Chain Specialist</b> <i>Trivantage LLC</i>',
-	      fullContent: '<b>Supply Chain Specialist</b> <i>Trivantage LLC</i><br>- Developed intranet using Google Apps Script and Google Apps for Work',
+	      shortContent: '<b>Supply Chain Specialist</b> <i>Trivantage</i>',
+	      fullContent: '<b>Supply Chain Specialist</b> <i>Trivantage</i><br>- Developed intranet using Google Apps Script and Google Apps for Work',
 	      showMore: '<a class="custom-show-btn"><i class="material-icons">add</i></a>',
 	      showLess: '<a class="custom-show-btn"><i class="material-icons">remove</i></a>',
 	      forcePosition: 'left'
@@ -506,8 +503,8 @@
 	    {
 	      type: 'smallItem',
 	      label: '1/13 - 4/13',
-	      shortContent: '<b>Inventory Control and Marketing Associate</b> <i>Trivantage LLC</i>',
-	      fullContent: '<b>Inventory Control and Marketing Associate</b> <i>Trivantage LLC</i><br>- Processed orders and optimized ROI for marketing program',
+	      shortContent: '<b>Inventory Control and Marketing Associate</b> <i>Trivantage</i>',
+	      fullContent: '<b>Inventory Control and Marketing Associate</b> <i>Trivantage</i><br>- Processed orders and optimized ROI for marketing program',
 	      showMore: '<a class="custom-show-btn"><i class="material-icons">add</i></a>',
 	      showLess: '<a class="custom-show-btn"><i class="material-icons">remove</i></a>',
 	      forcePosition: 'left'
@@ -516,7 +513,7 @@
 	      type: 'smallItem',
 	      label: '2013',
 	      shortContent: '<b>Bachelor of Science, Music Technology</b> <i>Elon University</i>',
-	      fullContent: '- Music production, recording and theory',
+	      fullContent: '<b>Bachelor of Science, Music Technology</b> <i>Elon University</i><br>- Music production, recording and theory',
 	      showMore: '<a class="custom-show-btn"><i class="material-icons">add</i></a>',
 	      showLess: '<a class="custom-show-btn"><i class="material-icons">remove</i></a>',
 	      forcePosition: 'right'
@@ -524,13 +521,13 @@
 	    {
 	      type: 'smallItem',
 	      label: '6/12 - 12/12',
-	      shortContent: '<b>Marketing Intern</b> <i>Trivantage LLC</i>',
-	      fullContent: '<b>Marketing Intern</b> <i>Trivantage LLC</i><br>- Researched marketing strategies and created business plans for expanding into new markets',
+	      shortContent: '<b>Marketing Intern</b> <i>Trivantage</i>',
+	      fullContent: '<b>Marketing Intern</b> <i>Trivantage</i><br>- Researched marketing strategies and created business plans for expanding into new markets',
 	      showMore: '<a class="custom-show-btn"><i class="material-icons">add</i></a>',
 	      showLess: '<a class="custom-show-btn"><i class="material-icons">remove</i></a>',
 	      forcePosition: 'left'
 	    }
-	  ]
+	  ];
 
 	$('#timeline-container-basic').timelineMe({
 	    labelClass: 'time-label',

@@ -1145,11 +1145,14 @@ header #menu-toggle:focus {
   padding: .1em;
   font-weight: 300;
 }
+#cover h1 {
+  font-size: 2.5em;
+}
 #cover h1 span {
   font-size: 125%;
 }
 #cover h3 {
-  font-size: 1.25em;
+  font-size: 1.5em;
 }
 
 #graphic {
