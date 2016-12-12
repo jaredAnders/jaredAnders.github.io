@@ -154,15 +154,16 @@
 	    labels: [
 	        'HTML',
 	        'Sass/CSS',
-	        'JavaScript',
-	        'jQuery',
+	        'JavaScript/ES6',
+	        'React/JSX',
 	        'AJAX/JSON',
+	        'jQuery',
 	        'Bootstrap',
 	        'Materialize.css'
 	    ],
 	    datasets: [
 	        {
-	        data: [9,9,7,7,7,5,7],
+	        data: [9,9,7,5,7,5,7,7],
 	        }
 	    ]
 	};
@@ -174,11 +175,12 @@
 	        'Git/GitHub',
 	        'Heroku',
 	        'AWS',
-	        'TDD'
+	        'TDD',
+	        'Node'
 	    ],
 	    datasets: [
 	        {
-	        data: [7,9,9,7,5,5]
+	        data: [7,9,9,7,5,5,7]
 	        }
 	    ]
 	};
