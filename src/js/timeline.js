@@ -6,8 +6,8 @@ var items = [
     {
       type: 'smallItem',
       label: '8/16 - present',
-      shortContent: '<b>Full-stack Web Development</b><br> <i>The Firehose Project</i>',
-      fullContent: '<b>Full-stack Web Development</b><br> <i>The Firehose Project</i><br>- Ruby, Rails & JavaScript<br>- Computer Science fundamentals and algorithms<br>- Development tools and workflows',
+      shortContent: '<b>Software Engineering</b><br> <i>The Firehose Project</i>',
+      fullContent: '<b>Software Engineering</b><br> <i>The Firehose Project</i><br>- Ruby, Rails & JavaScript<br>- MVC architecture<br>- Data structures and algorithms<br>- TDD<br>- Agile methodologies',
       showMore: '<a class="custom-show-btn"><i class="material-icons">add</i></a>',
       showLess: '<a class="custom-show-btn"><i class="material-icons">remove</i></a>',
       forcePosition: 'right'
@@ -108,8 +108,8 @@ var items = [
     {
       type: 'smallItem',
       label: '2013',
-      shortContent: '<b>Bachelor of Science, Music Technology</b> <i>Elon University</i>',
-      fullContent: '<b>Bachelor of Science, Music Technology</b> <i>Elon University</i><br>- Music production, recording and theory',
+      shortContent: '<b>Bachelor of Science, Music Technology</b><br> <i>Elon University</i>',
+      fullContent: '<b>Bachelor of Science, Music Technology</b><br> <i>Elon University</i><br>- Music production, recording and theory',
       showMore: '<a class="custom-show-btn"><i class="material-icons">add</i></a>',
       showLess: '<a class="custom-show-btn"><i class="material-icons">remove</i></a>',
       forcePosition: 'right'
