@@ -48,11 +48,27 @@
 	__webpack_require__(2);
 	__webpack_require__(3);
 	__webpack_require__(4);
-	module.exports = __webpack_require__(5);
+	__webpack_require__(5);
+	module.exports = __webpack_require__(6);
 
 
 /***/ },
 /* 1 */
+/***/ function(module, exports) {
+
+	$('#read-more').hide();
+	$('#expand').click(function() {
+	  if($('#read-more').is(':hidden')) {
+	    $('#expand').text('read less');
+	  } else {
+	    $('#expand').text('read more');
+	  }
+	  $('#read-more').toggle(250);
+	})
+
+
+/***/ },
+/* 2 */
 /***/ function(module, exports) {
 
 	//form
@@ -71,7 +87,7 @@
 
 
 /***/ },
-/* 2 */
+/* 3 */
 /***/ function(module, exports) {
 
 	//header
@@ -104,7 +120,7 @@
 	//};
 
 /***/ },
-/* 3 */
+/* 4 */
 /***/ function(module, exports) {
 
 	//var jQueryMobile = require('jquery-mobile');
@@ -130,7 +146,7 @@
 
 
 /***/ },
-/* 4 */
+/* 5 */
 /***/ function(module, exports) {
 
 	//chart data
@@ -401,12 +417,12 @@
 
 
 /***/ },
-/* 5 */
+/* 6 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//timeline
 
-	var timelineMe = __webpack_require__(6);
+	var timelineMe = __webpack_require__(7);
 
 	var items = [
 	    {
@@ -539,7 +555,7 @@
 
 
 /***/ },
-/* 6 */
+/* 7 */
 /***/ function(module, exports) {
 
 	/*--------------------------------------------------------------------
