@@ -1197,6 +1197,10 @@ header #menu-toggle:focus {
 }
 #bio-cont p {
   padding: .5em 0;
+  text-indent: 2em;
+}
+#bio-cont h3 {
+  font-weight: normal;
 }
 
 #skills-cont {
