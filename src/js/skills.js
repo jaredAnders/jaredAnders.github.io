@@ -45,7 +45,7 @@ var backEnd = {
     ],
     datasets: [
         {
-        data: [7,9,9,7,5,5,7]
+        data: [7,9,9,7,5,7,7]
         }
     ]
 };
