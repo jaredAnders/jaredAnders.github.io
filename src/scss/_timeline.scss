@@ -2,6 +2,7 @@
     padding: 1em;
     text-align: center;
     color: $white;
+    font-weight: 300;
     background: $bg7;
     h2 {
         text-align: left;
@@ -36,7 +37,7 @@
         transition: .3s ease-out;
         &:hover {
             cursor: pointer;
-            background-color: lighten($teal, 10%);
+            background-color: lighten($teal, 20%);
             box-shadow: 0 0 2em rgba(black,.25);
         }
     }

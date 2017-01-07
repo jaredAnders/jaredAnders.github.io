@@ -16,8 +16,7 @@
     text-decoration: none;
     transition: .3s ease-out;
     &:hover {
-      color: lighten($teal,10%);
-      text-decoration: underline;
+      color: lighten($teal,20%);
     }
   }
   p {
@@ -36,11 +35,12 @@
   }
   #expand {
     font-style: italic;
+    color: $teal;
     font-weight: 300;
     transition: .3s;
     &:hover, &:focus, &:active {
       cursor: pointer;
-      color: rgba(white,.9);
+      color: lighten($teal, 20%);
     }
   }
   #read-more {

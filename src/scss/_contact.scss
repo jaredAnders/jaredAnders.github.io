@@ -39,7 +39,7 @@
         padding: 1em 2em;
         cursor: pointer;
         &:hover{
-            background: lighten($teal,10%);
+            background: lighten($teal,20%);
             box-shadow: 0 0 2em rgba(black,.5);
         }
         &:active{
@@ -51,5 +51,6 @@
 
 #thank-you {
     font-size: 1.25em;
+    font-weight: 100;
     color: $white;
 }

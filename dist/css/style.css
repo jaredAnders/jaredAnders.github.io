@@ -1192,8 +1192,7 @@ header #menu-toggle:focus {
   transition: .3s ease-out;
 }
 #bio-cont a:hover {
-  color: #4beec5;
-  text-decoration: underline;
+  color: #7af2d4;
 }
 #bio-cont p {
   color: rgba(255, 255, 255, 0.6);
@@ -1211,12 +1210,13 @@ header #menu-toggle:focus {
 }
 #bio-cont #expand {
   font-style: italic;
+  color: #1DE9B6;
   font-weight: 300;
   transition: .3s;
 }
 #bio-cont #expand:hover, #bio-cont #expand:focus, #bio-cont #expand:active {
   cursor: pointer;
-  color: rgba(255, 255, 255, 0.9);
+  color: #7af2d4;
 }
 
 #skills-cont {
@@ -1264,6 +1264,7 @@ header #menu-toggle:focus {
   padding: 1em;
   text-align: center;
   color: rgba(255, 255, 255, 0.7);
+  font-weight: 300;
   background: #455A64;
 }
 #experience-cont h2 {
@@ -1305,7 +1306,7 @@ header #menu-toggle:focus {
 }
 #experience-cont .custom-show-btn:hover {
   cursor: pointer;
-  background-color: #4beec5;
+  background-color: #7af2d4;
   box-shadow: 0 0 2em rgba(0, 0, 0, 0.25);
 }
 #experience-cont .time-label {
@@ -1405,7 +1406,7 @@ header #menu-toggle:focus {
   cursor: pointer;
 }
 #contact #cta:hover {
-  background: #4beec5;
+  background: #7af2d4;
   box-shadow: 0 0 2em rgba(0, 0, 0, 0.5);
 }
 #contact #cta:active {
@@ -1415,6 +1416,7 @@ header #menu-toggle:focus {
 
 #thank-you {
   font-size: 1.25em;
+  font-weight: 100;
   color: rgba(255, 255, 255, 0.7);
 }
 
