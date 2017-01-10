@@ -58,10 +58,12 @@
   margin:0 auto;
   overflow:hidden;
   border-radius: 100%;
-  width:30vh;
-  height:30vh;
+  width: 15em;
+  height: 15em;
+  max-width: 90vw;
+  max-height: 90vw;
   border:.1em solid $white;
   img {
-    margin-left: -1em;
+    margin-left: -2em;
   }
 }
