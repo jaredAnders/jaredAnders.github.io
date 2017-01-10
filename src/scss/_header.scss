@@ -18,12 +18,20 @@ header {
         padding: .5em 15%;
     }
     #logo {
-        height: 2.5em;
+        height: 2em;
+        transition: .3s ease-out;
+        &:hover {
+          cursor: pointer;
+          color: lighten($teal,20%);
+        }
     }
     #menu-toggle {
-        height: 2em;
+        font-size: 2em;
+        color: $white;
+        transition: .3s ease-out;
         &:hover {
-            cursor: pointer;
+          cursor: pointer;
+          color: lighten($teal,20%);
         }
         &:focus {
             outline: none;

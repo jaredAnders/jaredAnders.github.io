@@ -1007,13 +1007,21 @@ header {
   }
 }
 header #logo {
-  height: 2.5em;
+  height: 2em;
+  transition: .3s ease-out;
+}
+header #logo:hover {
+  cursor: pointer;
+  color: #7af2d4;
 }
 header #menu-toggle {
-  height: 2em;
+  font-size: 2em;
+  color: rgba(255, 255, 255, 0.7);
+  transition: .3s ease-out;
 }
 header #menu-toggle:hover {
   cursor: pointer;
+  color: #7af2d4;
 }
 header #menu-toggle:focus {
   outline: none;

@@ -1,11 +1,15 @@
 //header
+$('#logo').hide();
+
 $(window).scroll(function(){
     var a = $(window).scrollTop();
     if (a >0) {
         $('header').addClass('scrolled');
+        $('#logo').show();
     }
     else {
         $('header').removeClass('scrolled');
+        $('#logo').hide();
     }
 });
 
