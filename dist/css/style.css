@@ -1179,12 +1179,12 @@ header #menu-toggle:focus {
   margin: 0 auto;
   overflow: hidden;
   border-radius: 100%;
-  width: 275px;
-  height: 275px;
-  border: 2px solid rgba(255, 255, 255, 0.7);
+  width: 15em;
+  height: 15em;
+  border: 0.1em solid rgba(255, 255, 255, 0.7);
 }
 #img-crop img {
-  margin-left: -10px;
+  margin-left: -1em;
 }
 
 #bio-cont {
