@@ -1179,8 +1179,8 @@ header #menu-toggle:focus {
   margin: 0 auto;
   overflow: hidden;
   border-radius: 100%;
-  width: 15em;
-  height: 15em;
+  width: 30vh;
+  height: 30vh;
   border: 0.1em solid rgba(255, 255, 255, 0.7);
 }
 #img-crop img {
