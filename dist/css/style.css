@@ -1160,10 +1160,23 @@ header #menu-toggle:focus {
   height: 50%;
   margin: 0 auto;
   max-width: 576px;
-  background: url(../img/distronik.svg);
+  background: url(../img/jared.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+#img-crop {
+  display: inline-block;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 100%;
+  width: 275px;
+  height: 275px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+}
+#img-crop img {
+  margin-left: -10px;
 }
 
 #bio-cont {
