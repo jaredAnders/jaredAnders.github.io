@@ -1,5 +1,5 @@
-# jaredAnders.github.io
-This site was built to serve as a digital resume while showcasing and expanding my development skill set. As a self-taught front-end developer, I began with a limited knowledge of HTML, CSS and JS and ended up exposing myself to new libraries and development techniques.
+# Personal Site
+This personal site was built to serve as a digital resume while showcasing and expanding my development skill set. As a self-taught front-end developer, I began with a background in HTML, CSS and JS and ended up exposing myself to new libraries and development techniques.
 
 ## Technologies Explored
 * Git/GitHub
