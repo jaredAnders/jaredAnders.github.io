@@ -1,10 +1,13 @@
 # Personal Site
-This personal site was built to serve as a digital resume while showcasing and expanding my development skill set. As a self-taught front-end developer, I began with a background in HTML, CSS and JS and ended up exposing myself to new libraries and development techniques.
+This is the first project I built from scratch in my free time as a self-taught front-end developer. What was originally intended to be a digital resume turned into an educational journey. Along the way, I researched and experimented with various tools and technologies while putting my front-end fundamentals to the test. From configuring a build pipeline and setting up a local dev server to working with SVGs, I explored many concepts and technologies throughout the world of web development. Looking back, this might not be the cleanest code I've ever written, but I'm proud of it.
 
 ## Technologies Explored
 * Git/GitHub
+* Node
+* NPM
 * Gulp
 * Sass
+* webpack
 * BrowserSync
 * Chart.js
 * AJAX
@@ -18,6 +21,3 @@ This personal site was built to serve as a digital resume while showcasing and e
 * Add touch/swipe functionality
 * Improve button/menu animations
 * Refactor for performance optimization
-
-## Notes
-Please excuse the ugliness of this code. It was the first project I built from scratch. I would refactor...but I'd rather just start over and build with React.
