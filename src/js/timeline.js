@@ -5,7 +5,7 @@ var timelineMe = require('jquery-timelineme');
 var items = [
     {
       type: 'smallItem',
-      label: '8/16 - present',
+      label: '8/16 - 1/17',
       shortContent: '<b>Software Engineering</b><br> <i>The Firehose Project</i>',
       fullContent: '<b>Software Engineering</b><br> <i>The Firehose Project</i><br>- Ruby, Rails & JavaScript<br>- MVC architecture<br>- Data structures and algorithms<br>- TDD<br>- Agile methodologies',
       showMore: '<a class="custom-show-btn"><i class="material-icons">add</i></a>',
