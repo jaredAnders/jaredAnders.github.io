@@ -467,7 +467,7 @@
 	      type: 'smallItem',
 	      label: '4/15 - 8/16',
 	      shortContent: '<b>e-Marketing Coordinator</b><br><i>Injured Workers Pharmacy</i>',
-	      fullContent: '<b>e-Marketing Coordinator</b><i>Injured Workers Pharmacy</i><br>- Coordinated UX enhancements and architecture optimization for .NET web application<br>- Deployed and configured web analytics, provided reporting and led weekly meetings on user behavior patterns<br>- Designed and developed landing pages in Drupal using HTML, CSS and jQuery<br>- Configured technical setup of blog and marketing automation through HubSpot<br>- Evaluated and configured solutions for marketing technology stack',
+	      fullContent: '<b>e-Marketing Coordinator</b><br><i>Injured Workers Pharmacy</i><br>- Coordinated UX enhancements and architecture optimization for .NET web application<br>- Deployed and configured web analytics, provided reporting and led weekly meetings on user behavior patterns<br>- Designed and developed landing pages in Drupal using HTML, CSS and jQuery<br>- Configured technical setup of blog and marketing automation through HubSpot<br>- Evaluated and configured solutions for marketing technology stack',
 	      showMore: '<a class="custom-show-btn"><i class="material-icons">add</i></a>',
 	      showLess: '<a class="custom-show-btn"><i class="material-icons">remove</i></a>',
 	      forcePosition: 'left'
@@ -482,7 +482,7 @@
 	      type: 'smallItem',
 	      label: '6/14 - 3/15',
 	      shortContent: '<b>eCommerce Marketing Specialist</b><br><i>Trivantage</i>',
-	      fullContent: '<b>eCommerce Marketing Specialist</b><i>Trivantage</i><br>- Designed and developed landing pages using HTML, CSS and jQuery for an IBM WebSphere Commerce site<br>- Configured JavaScript API, administered live chat, wrote user manual and trained operators<br>- Optimized internal site search synonyms',
+	      fullContent: '<b>eCommerce Marketing Specialist</b><br><i>Trivantage</i><br>- Designed and developed landing pages using HTML, CSS and jQuery for an IBM WebSphere Commerce site<br>- Configured JavaScript API, administered live chat, wrote user manual and trained operators<br>- Optimized internal site search synonyms',
 	      showMore: '<a class="custom-show-btn"><i class="material-icons">add</i></a>',
 	      showLess: '<a class="custom-show-btn"><i class="material-icons">remove</i></a>',
 	      forcePosition: 'left'
