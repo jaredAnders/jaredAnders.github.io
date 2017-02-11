@@ -2,15 +2,42 @@
 
 var categories = {
     labels: [
+        'JavaScript',
+        'Ruby',
         'Front-end',
-        'Back-end',
-        // 'Design',
-        'Analytics'
+        'Tools'
     ],
     datasets: [
         {
             label: 'categories',
-            data: [9,7,9]
+            data: [7, 7, 9, 7]
+        }
+    ]
+};
+
+var javaScript = {
+    labels: [
+        'ES6',
+        'Node',
+        'React',
+        'jQuery'
+    ],
+    datasets: [
+        {
+        data: [7,5,7,7],
+        }
+    ]
+};
+
+var ruby = {
+    labels: [
+        'Rails',
+        'RSpec',
+        'factory_girl'
+    ],
+    datasets: [
+        {
+        data: [7,7,5]
         }
     ]
 };
@@ -19,62 +46,27 @@ var frontEnd = {
     labels: [
         'HTML',
         'Sass/CSS',
-        'JavaScript/ES6',
-        'React/JSX',
-        'AJAX/JSON',
-        'jQuery',
         'Bootstrap',
-        'Materialize.css'
+        'Materialize'
     ],
     datasets: [
         {
-        data: [9,9,7,5,7,5,7,7],
+        data: [7,7,5,7]
         }
     ]
 };
 
-var backEnd = {
+var tools = {
     labels: [
-        'Ruby',
-        'Rails',
         'Git/GitHub',
         'Heroku',
         'AWS',
-        'TDD',
-        'Node'
+        'webpack',
+        'Gulp'
     ],
     datasets: [
         {
-        data: [7,9,9,7,5,7,7]
-        }
-    ]
-};
-
-// var design = {
-//     labels: [
-//         'Illustrator',
-//         'Photoshop',
-//         'Sketch',
-//         'InVision'
-//     ],
-//     datasets: [
-//         {
-//         data: [5,9,3,7]
-//         }
-//     ]
-// };
-
-var analytics = {
-    labels: [
-        'Tableau',
-        'Excel',
-        'Google Tag Manager',
-        'Google Analytics',
-        'Heap'
-    ],
-    datasets: [
-        {
-        data: [5,9,7,9,7]
+        data: [7,5,5,5,5]
         }
     ]
 };
@@ -94,7 +86,7 @@ var analytics = {
 //        }
 //    ]
 //},
-//    frontEnd: {
+//    javaScript: {
 //        labels: [
 //            'HTML',
 //            'Sass/CSS',
@@ -108,7 +100,7 @@ var analytics = {
 //            }
 //        ]
 //    },
-//    backEnd: {
+//    ruby: {
 //        labels: [
 //            'Drupal',
 //            'HubSpot',
@@ -121,7 +113,7 @@ var analytics = {
 //            }
 //        ]
 //    },
-//    design: {
+//    frontEnd: {
 //        labels: [
 //            'Illustrator',
 //            'Photoshop',
@@ -134,7 +126,7 @@ var analytics = {
 //            }
 //        ]
 //    },
-//    analytics: {
+//    tools: {
 //        labels: [
 //            'Google Tag Manager',
 //            'Google Analytics',
@@ -243,16 +235,16 @@ $('#chart').on('click', function (evt){
         dataSet = activePoints[0]._chart.config.data.datasets[0].label;
         if (dataSet == 'categories'){
             if (index === 0){
-                recreateChart(frontEnd);
+                recreateChart(javaScript);
             }
             else if (index == 1){
-                recreateChart(backEnd);
+                recreateChart(ruby);
             }
-            // else if (index == 2){
-            //     recreateChart(design);
-            // }
             else if (index == 2){
-                recreateChart(analytics);
+                recreateChart(frontEnd);
+            }
+            else if (index == 3){
+                recreateChart(tools);
             }
         }
         else {
