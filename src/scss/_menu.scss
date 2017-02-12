@@ -7,15 +7,9 @@
     width: 75%;
     max-width: 320px;
     background: $bg7;
-    -moz-box-shadow: 1.5em 0 3em rgba(0,0,0,1), 1em 0 .75em rgba(0,0,0,1);
-    -webkit-box-shadow: 1.5em 0 3em rgba(0,0,0,1), 1em 0 .75em rgba(0,0,0,1);
     box-shadow: 1.5em 0 3em rgba(0,0,0,1), 1em 0 .75em rgba(0,0,0,1);
     overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
-    -webkit-transform: translateX(100%);
-    -ms-transform: translateX(100%);
     transform: translateX(100%);
-    -webkit-transition: 350ms ease-out;
     transition: 350ms ease-out;
     ul {
         list-style: none;
@@ -64,7 +58,6 @@
     }
 }
 
-
 .overlay {
     position: fixed;
     z-index: -500;
@@ -77,16 +70,12 @@
     opacity: 0;
     cursor: pointer;
     overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
-    -webkit-transition: 250ms ease-out;
     transition: 250ms ease-out;
 }
 
 .open {
     z-index: 500;
     opacity: 1;
-    //-webkit-transition: 500ms ease-out;
-    //transition: 500ms ease-out;
 }
 
 .selected {
