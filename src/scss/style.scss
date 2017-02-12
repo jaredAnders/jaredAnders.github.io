@@ -6,19 +6,19 @@
 
 //reset box-sizing
 * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 //base
 body {
-    font: 1rem $lato;
-    position: relative;
-    z-index: 0;
-    background: $bg8;
+  font: 1rem $lato;
+  position: relative;
+  z-index: 0;
+  background: $bg8;
 }
 
 ::selection {
@@ -26,14 +26,14 @@ body {
 }
 
 h2 {
-    font-weight: 300;
-    font-size: 1.5em;
+  font-weight: 300;
+  font-size: 1.5em;
 }
 
 .jump:before {
-    display: block;
-    content: " ";
-    margin-top: -3.5em;
-    height: 3.5em;
-    visibility: hidden;
+  display: block;
+  content: " ";
+  margin-top: -3.5em;
+  height: 3.5em;
+  visibility: hidden;
 }

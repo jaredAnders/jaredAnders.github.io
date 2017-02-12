@@ -19,7 +19,6 @@ var wpConfig = {
 gulp.task('styles', ['cleanCSS'], function() {
       return sass('src/scss/*.scss', { style: 'expanded' })
             .pipe(autoprefixer('last 2 version'))
-            .pipe(gulp.dest('dist/css'))
             .pipe(rename({ suffix: '.min' }))
             .pipe(cssnano())
             .pipe(gulp.dest('dist/css'))
