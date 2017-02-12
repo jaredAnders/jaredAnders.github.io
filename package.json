@@ -31,6 +31,7 @@
   },
   "dependencies": {
     "jquery": "^2.2.4",
-    "jquery-timelineme": "^0.1.7"
+    "jquery-timelineme": "^0.1.7",
+    "normalize-scss": "^6.0.0"
   }
 }

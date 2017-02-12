@@ -2,7 +2,7 @@
 
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 
-@import '_normalize', '../../node_modules/jquery-timelineme/src/jquery.timelineMe', '_variables', '_header', '_menu', '_cover', '_bio', '_skills', '_timeline', '_contact';
+@import '../../node_modules/normalize-scss/sass/normalize/_import-now.scss', '../../node_modules/jquery-timelineme/src/jquery.timelineMe', '_variables', '_header', '_menu', '_cover', '_bio', '_skills', '_timeline', '_contact';
 
 //reset box-sizing
 * {
