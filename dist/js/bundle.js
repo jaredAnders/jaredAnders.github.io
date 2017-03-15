@@ -202,8 +202,8 @@
 	    labels: [
 	        'HTML',
 	        'Sass/CSS',
-	        'Bootstrap',
-	        'Materialize'
+	        'Materialize',
+	        'Bootstrap'
 	    ],
 	    datasets: [
 	        {
